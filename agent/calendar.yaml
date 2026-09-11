@@ -1,84 +1,84 @@
 # LinkedIn Content Calendar
-# Weekly seed topics for an AI/ML engineer sharing practical, hands-on lessons.
+# Weekly seed topics for an Angular frontend developer sharing practical lessons.
 # NOTE: templates here are only a last-resort scaffold. The main flow generates
 # humanized story-style posts via the LLM (see agent/llm_generator.py). These
 # body_templates are deliberately plain — no emojis, no bullet scaffolding.
 
 weekly_schedule:
-  # Monday: Agents & agentic workflows
+  # Monday: Angular architecture
   0:
-    primary_topic: "Building Agentic Workflows with Claude"
+    primary_topic: "Angular Application Architecture"
     subtopics:
-      - "Tool use and function calling"
-      - "Multi-step agent loops"
-      - "When an agent should stop"
-      - "Giving agents memory"
+      - "Standalone components and feature boundaries"
+      - "Smart and presentational component boundaries"
+      - "Route-level lazy loading"
+      - "Keeping shared services focused"
     post_type: "lesson"
     series_length: 4
 
-  # Tuesday: LLM API implementation details
+  # Tuesday: Angular performance
   1:
-    primary_topic: "AI API Implementation Details"
+    primary_topic: "Angular Performance Optimization"
     subtopics:
-      - "Handling rate limits and retries"
-      - "Cost optimization tricks"
-      - "Streaming and latency"
-      - "Structured output that does not break"
+      - "Change detection and rendering cost"
+      - "OnPush in real applications"
+      - "Lazy loading and bundle size"
+      - "Avoiding unnecessary subscriptions"
     post_type: "lesson"
     series_length: 4
 
-  # Wednesday: RAG & retrieval
+  # Wednesday: RxJS and state
   2:
-    primary_topic: "RAG Pipelines in Production"
+    primary_topic: "RxJS and Reactive Frontend Patterns"
     subtopics:
-      - "Chunking mistakes juniors make"
-      - "When retrieval hurts more than helps"
-      - "Evaluating retrieval quality"
-      - "Keeping context small"
+      - "Cancellation with switchMap"
+      - "Loading and error state design"
+      - "Avoiding nested subscriptions"
+      - "Choosing signals or observables"
     post_type: "lesson"
     series_length: 4
 
-  # Thursday: Prompt engineering
+  # Thursday: TypeScript
   3:
-    primary_topic: "Prompt Engineering Patterns Juniors Miss"
+    primary_topic: "TypeScript for Scalable Frontend Systems"
     subtopics:
-      - "Why examples beat instructions"
-      - "Controlling output format"
-      - "Reducing hallucination"
-      - "Prompting for tool use"
+      - "Strict types at API boundaries"
+      - "Reusable domain types"
+      - "Avoiding any in UI code"
+      - "Discriminated unions for UI state"
     post_type: "lesson"
     series_length: 4
 
-  # Friday: Reliability & production patterns
+  # Friday: Angular testing
   4:
-    primary_topic: "Production Patterns Tutorials Skip"
+    primary_topic: "Angular Testing and Maintainability"
     subtopics:
-      - "Error handling around AI APIs"
-      - "Evaluating LLM output automatically"
-      - "Caching to cut cost"
-      - "Debugging nondeterministic behavior"
+      - "Testing components without brittle selectors"
+      - "Testing services at the right boundary"
+      - "Mocking HTTP requests clearly"
+      - "Keeping tests useful during refactors"
     post_type: "lesson"
     series_length: 4
 
-  # Saturday: Personal engineering lessons
+  # Saturday: Frontend developer lessons
   5:
-    primary_topic: "Things I Learned Building AI Products"
+    primary_topic: "Things I Learned Building Angular Products"
     subtopics:
-      - "A bug that taught me something"
-      - "A tool that changed my workflow"
-      - "A mistake I kept repeating"
+      - "A UI bug that taught me something"
+      - "A frontend tool that changed my workflow"
+      - "A mistake I kept repeating in Angular"
       - "Something I wish I knew earlier"
     post_type: "story"
     series_length: 4
 
-  # Sunday: Model & tooling choices
+  # Sunday: Reliable user interfaces
   6:
-    primary_topic: "Choosing Models and Tools"
+    primary_topic: "Building Reliable User Interfaces"
     subtopics:
-      - "When to fine-tune vs prompt"
-      - "Picking the right model for the job"
-      - "Cost vs quality trade-offs"
-      - "Context window management"
+      - "Designing useful empty states"
+      - "Handling slow network responses"
+      - "Accessible form validation"
+      - "Making errors recoverable"
     post_type: "lesson"
     series_length: 4
 

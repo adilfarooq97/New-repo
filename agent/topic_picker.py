@@ -24,7 +24,7 @@ def get_weekday_topic() -> Dict[str, Any]:
     if not os.path.exists(calendar_path):
         weekday = datetime.datetime.now().weekday()
         weekday_topics = {
-            0: "Building Agentic Workflows with Claude",
+            0: "Angular Application Architecture",
             1: "AI API Implementation Details",
             2: "RAG Pipelines in Production",
             3: "Prompt Engineering Patterns Juniors Miss",
@@ -46,7 +46,7 @@ def get_weekday_topic() -> Dict[str, Any]:
     except Exception as e:
         logger.warning(f"Failed to load calendar: {e}")
         return {
-            "primary_topic": "Artificial Intelligence",
+            "primary_topic": "Angular Application Architecture",
             "subtopic": None,
             "post_type": "general",
             "part": 1,
@@ -58,7 +58,7 @@ def get_weekday_topic() -> Dict[str, Any]:
     
     if not day_config:
         return {
-            "primary_topic": "Artificial Intelligence",
+            "primary_topic": "Angular Application Architecture",
             "subtopic": None,
             "post_type": "general",
             "part": 1,
@@ -100,18 +100,18 @@ def get_weekday_topic() -> Dict[str, Any]:
 
 def generate_smart_hashtags(topic: str) -> List[str]:
     """Generate smart, diverse hashtags based on topic."""
-    base_tags = ["#AI", "#MachineLearning"]
+    base_tags = ["#SoftwareEngineering", "#FrontendDevelopment"]
     
     topic_words = [word for word in topic.split() if len(word) > 3]
     topic_tags = [f"#{word.replace(' ', '')}" for word in topic_words[:2]]
     
     niche_tags = [
-        "#GenerativeAI", "#MLOps", "#AIResearch", "#DeepLearning",
-        "#ComputerVision", "#NLP", "#ReinforcementLearning"
+        "#Angular", "#TypeScript", "#RxJS", "#WebDevelopment",
+        "#JavaScript", "#SoftwareDevelopment", "#UserInterfaces"
     ]
     
     broad_tags = [
-        "#DataScience", "#Tech", "#Innovation", "#ArtificialIntelligence"
+        "#Frontend", "#Technology", "#Accessibility", "#Testing"
     ]
     
     selected_niche = random.sample(niche_tags, min(2, len(niche_tags)))
@@ -141,7 +141,7 @@ def get_niche_post(topic: Optional[str] = None, template: Optional[Dict[str, str
             cfg = yaml.safe_load(f)
     except Exception as e:
         logger.warning(f"Failed to load config: {e}")
-        cfg = {"niches": ["Artificial Intelligence"]}
+        cfg = {"niches": ["Angular Application Architecture"]}
     
     if topic:
         primary_topic = topic
@@ -157,9 +157,9 @@ def get_niche_post(topic: Optional[str] = None, template: Optional[Dict[str, str
         part = topic_info["part"]
         total = topic_info["total"]
     else:
-        niches = cfg.get("niches", ["Artificial Intelligence"])
+        niches = cfg.get("niches", ["Angular Application Architecture"])
         if not niches:
-            niches = ["Artificial Intelligence"]
+            niches = ["Angular Application Architecture"]
         # pick a niche not used in this session if possible
         available = [n for n in niches if n not in _used_niches_session]
         if not available:

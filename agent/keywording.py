@@ -13,12 +13,9 @@ STOPWORDS = {
 }
 
 DOMAIN_KEYWORDS = {
-    "ai", "ml", "machinelearning", "deeplearning", "neuralnetwork", "model",
-    "algorithm", "data", "dataset", "training", "inference", "prediction",
-    "classification", "regression", "clustering", "drugdiscovery", "molecule",
-    "protein", "bioinformatics", "computational", "biology", "chemistry",
-    "generative", "transformer", "attention", "gan", "vae", "diffusion",
-    "optimization", "research", "paper", "arxiv", "github", "opensource"
+    "angular", "typescript", "javascript", "rxjs", "frontend", "software",
+    "web", "component", "service", "testing", "interface", "accessibility",
+    "performance", "architecture", "developer", "github", "opensource"
 }
 
 

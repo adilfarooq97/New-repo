@@ -4,6 +4,7 @@ import json
 import argparse
 from datetime import datetime
 from functools import wraps
+from typing import Optional
 from dotenv import load_dotenv
 
 # Load environment variables from .env if present
@@ -238,7 +239,7 @@ class LinkedInAgent:
 
     @timed_operation("engagement_fetch")
     @handled_operation("Engagement fetch") # Non-critical error, continue if fails
-    def _fetch_linkedin_engagement(self) -> dict | None:
+    def _fetch_linkedin_engagement(self) -> Optional[dict]:
         """Fetches LinkedIn engagement metrics.
 
         Disabled during posting runs by default: metrics are collected by the

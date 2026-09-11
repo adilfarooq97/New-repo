@@ -103,15 +103,15 @@ def generate_repo_post(repo: str, context: str = "") -> dict:
     
     fallback_body = f"""Just wrapped up work on {data['name']}, and I'm excited to share it with the community.
 
-{data.get('desc', 'An AI-based project focused on solving real-world challenges.')}{readme_snippet}
+{data.get('desc', 'A software project focused on solving a practical problem.')}{readme_snippet}
 
-Built with {data.get('language', 'Python')}, this project tackles some interesting problems in the {', '.join(data.get('topics', ['AI'])[:3])} space. {stars_info}
+Built with {data.get('language', 'TypeScript')}, this project tackles some interesting problems in the {', '.join(data.get('topics', ['software development'])[:3])} space. {stars_info}
 
 Check it out and let me know your thoughts. Always open to feedback and collaboration.
 
 🔗 {data['url']}
 
-#AI #MachineLearning #OpenSource #GitHub"""
+#SoftwareEngineering #WebDevelopment #OpenSource #GitHub"""
     
     seo_score, seo_keywords = optimize_post(fallback_body)
     
@@ -120,7 +120,7 @@ Check it out and let me know your thoughts. Always open to feedback and collabor
         "body": fallback_body.strip(),
         "seo_score": seo_score,
         "seo_keywords": seo_keywords,
-        "hashtags": ["#AI", "#MachineLearning", "#OpenSource", "#GitHub"]
+        "hashtags": ["#SoftwareEngineering", "#WebDevelopment", "#OpenSource", "#GitHub"]
     }
 
 

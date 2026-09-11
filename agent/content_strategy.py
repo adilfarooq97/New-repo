@@ -71,7 +71,7 @@ def is_topic_cooldown(topic: str, days: int = 7) -> bool:
 
 def get_next_category() -> str:
     """Plain round robin over the fixed content categories (config.yaml niches:
-    AI Research & New Advancements / AI Engineering / AI Development).
+    Angular architecture / Angular performance / frontend engineering).
 
     Repeating a category every 3rd day is expected and fine — a category is a
     broad bucket, not a topic. What must never repeat is the specific topic
@@ -79,7 +79,7 @@ def get_next_category() -> str:
     """
     categories = load_niches_list()
     if not categories:
-        return "AI Engineering"
+        return "Angular Application Architecture"
 
     idx = -1
     if os.path.exists(NICHE_INDEX_PATH):

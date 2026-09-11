@@ -4,23 +4,25 @@
     "smtp_server": "smtp.gmail.com"
   },
   "niches": [
-    "Building Agentic Workflows with Claude",
-    "LLM API Cost Optimization",
-    "Prompt Engineering Patterns Juniors Miss",
-    "RAG Pipeline Mistakes at Scale",
-    "Context Window Management in Production",
-    "Structured Output and Tool Use with LLMs",
-    "Building Reliable AI Agents"
+    "Angular Application Architecture",
+    "Angular Performance Optimization",
+    "RxJS and Reactive Frontend Patterns",
+    "TypeScript for Scalable Frontend Systems",
+    "Angular Testing and Maintainability",
+    "Frontend Developer Productivity",
+    "Building Reliable User Interfaces"
   ],
   "posting": {
-    "start_time": "11:00",
+    "start_time": "10:00",
+    "candidate_times": ["10:00"],
+    "time_window_end": 300,
     "time_increment": 30,
     "timezone": "Asia/Karachi"
   },
   "user": {
-    "name": "Muhammad Ahmed",
-    "persona": "AI/ML Engineer | Building real LLM-powered products and agents",
-    "voice": "Practical builder | First-person real experience | Simple, direct, non-native English | No corporate hype",
-    "linkedin_profile_url": "https://www.linkedin.com/in/muhammad-ahmed-afzal/"
+    "name": "Muhammad Adil Farooq",
+    "persona": "Frontend Developer | Building scalable Angular applications and reliable user experiences",
+    "voice": "Practical Angular builder | First-person real experience | Simple, direct, useful lessons | No corporate hype",
+    "linkedin_profile_url": "https://www.linkedin.com/in/muhammadadilfarooq/"
   }
 }

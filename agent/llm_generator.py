@@ -17,15 +17,14 @@ OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 DEFAULT_MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-4o-mini")
 
 ENHANCED_PROMPT_CONSTRAINTS = """
-You are a working AI/ML engineer who builds real LLM-powered products and agents.
+You are a working Angular frontend developer who builds real, maintainable web applications.
 You are writing a short LinkedIn post that teaches ONE practical thing.
 
 WHO YOU ARE WRITING FOR AND ABOUT:
 - Teach one specific thing that a junior engineer usually does NOT know, but that an
   associate/mid-level engineer knows well from real work. Examples of the *kind* of thing:
-  a gotcha with LLM rate limits and retries, a cheaper way to use an API, a prompt pattern
-  that actually changes behavior, a RAG mistake that only shows up at scale, how you keep
-  the context window small in production, a tool-use detail, an error you had to debug.
+    a gotcha with Angular rendering, an RxJS cancellation pattern, a TypeScript boundary,
+    a testing mistake, a performance issue, an accessibility detail, or an error you had to debug.
 - Make it feel earned from real building, not read from a tutorial.
 
 HOW TO WRITE IT (this is the most important part — write like a real human, not an AI):
@@ -183,11 +182,11 @@ class LLMGenerator:
     def _build_repo_prompt(repo_info: Dict[str, Any]) -> List[Dict[str, str]]:
         """Build enhanced prompt for repository-based posts."""
         name = repo_info.get("name", "Repository")
-        desc = repo_info.get("desc") or "an AI-based project"
+        desc = repo_info.get("desc") or "a frontend project"
         readme = repo_info.get("readme") or ""
         url = repo_info.get("url", "")
         topics = repo_info.get("topics") or []
-        language = repo_info.get("language", "Python")
+        language = repo_info.get("language", "TypeScript")
         
         context_snippet = ""
         if readme:
@@ -199,7 +198,7 @@ Project notes:
 - Name: {name}
 - Purpose: {desc}
 - Technology: {language}
-- Focus Areas: {', '.join(topics) if topics else 'AI and LLM engineering'}
+- Focus Areas: {', '.join(topics) if topics else 'Angular and frontend engineering'}
 - Project Link: {url}
 {context_snippet}
 
@@ -213,7 +212,7 @@ in a real moment, not a feature list.
         return [
             {
                 "role": "user",
-                "content": f"""SYSTEM INSTRUCTION: You are a hands-on AI/ML engineer who ships LLM-powered products. You write in simple, direct, first-person English (non-native is fine). You share real engineering lessons, never corporate hype.
+                "content": f"""SYSTEM INSTRUCTION: You are a hands-on Angular frontend developer who ships maintainable web applications. You write in simple, direct, first-person English. You share real engineering lessons, never corporate hype.
 
 USER REQUEST:
 {user_prompt}"""
@@ -231,7 +230,7 @@ USER REQUEST:
                 f"use it to pick the angle and to avoid repeating openings that already flopped):\n{context}"
             )
 
-        user_prompt = f"""Write a short LinkedIn post about this area of AI/LLM engineering: {niche_topic}.{context_instruction}
+        user_prompt = f"""Write a short LinkedIn post about this area of Angular/frontend engineering: {niche_topic}.{context_instruction}
 
 Do not "cover the topic". Instead, pick ONE small, specific, practical thing inside {niche_topic}
 that you learned the hard way while building — the kind of detail a junior engineer gets wrong and
@@ -244,7 +243,7 @@ work.
         return [
             {
                 "role": "user",
-                "content": f"""SYSTEM INSTRUCTION: You are a hands-on AI/ML engineer who ships LLM-powered products (agents, RAG systems, API integrations). You write in simple, direct, first-person English (non-native speaker is fine and preferred over polished corporate English). You share real engineering lessons, never hype. If a regeneration hint is present in the CONTEXT, change the angle and the opening line.
+                "content": f"""SYSTEM INSTRUCTION: You are a hands-on Angular frontend developer who ships maintainable web applications. You write in simple, direct, first-person English. You share real engineering lessons, never hype. If a regeneration hint is present in the CONTEXT, change the angle and the opening line.
 
 USER REQUEST:
 {user_prompt}"""
@@ -269,9 +268,10 @@ USER REQUEST:
             "model": model_name,
             "messages": messages,
             "temperature": temperature,
-            "top_p": 0.95,
             "max_tokens": max_tokens
         }
+        if model_name.startswith("nex-agi/"):
+            payload["reasoning"] = {"enabled": False}
 
         for attempt in range(2):
             try:

@@ -15,7 +15,7 @@ pick hashtags that maximize reach. You must NOT corporate-ify or over-polish it.
 Return only valid JSON with no additional text."""
 
 SEO_USER_TEMPLATE = """Lightly clean up this LinkedIn post. It is meant to sound like a real
-AI/ML engineer telling a small story from their own work, in simple non-native English.
+Angular frontend developer telling a small story from their own work, in simple direct English.
 
 Original post:
 {post}
@@ -26,9 +26,10 @@ Rules:
 - Keep it 90-180 words, under 1,300 characters.
 - No emojis, no bullet points, no numbered lists, no bold, no section labels.
 - Do NOT stuff keywords. Do NOT add hype words (game-changer, seamless, leverage, unlock, etc).
-- Hashtags: exactly 3 to 5, for maximum reach. Mix 1-2 broad trending tags (e.g. #AI,
-  #MachineLearning, #GenerativeAI, #ArtificialIntelligence) with 2-3 tags specific to the
-  post's actual topic. Plain, relevant, no stuffing. Place them at the very end.
+- Hashtags: exactly 3 to 5, for maximum reach. Use only software development tags such as
+#SoftwareEngineering, #SoftwareDevelopment, #Angular, #TypeScript, #RxJS, #Frontend,
+#WebDevelopment, #JavaScript, or #Technology. Never use AI, biology, medical, finance,
+#or any unrelated industry tag. Tags must match the actual post topic. Place them at the end.
 - Preserve any @mentions and links.
 
 Return JSON with:
@@ -41,15 +42,16 @@ Return JSON with:
 """
 
 BROAD_HASHTAGS = {
-    "#AI", "#MachineLearning", "#DataScience", "#DeepLearning", "#ArtificialIntelligence",
-    "#ML", "#Tech", "#Innovation", "#Technology", "#DigitalTransformation"
+    "#SoftwareEngineering", "#SoftwareDevelopment", "#Technology", "#Tech",
+    "#WebDevelopment", "#Frontend", "#JavaScript"
 }
 
 NICHE_HASHTAGS = {
-    "#DrugDiscovery", "#ComputationalBiology", "#Bioinformatics", "#MolecularModeling",
-    "#AIResearch", "#GenerativeAI", "#MLOps", "#ScientificML", "#ProteinDesign",
-    "#AIinScience", "#ComputationalChemistry", "#MolecularML", "#Biotech"
+    "#Angular", "#AngularDevelopment", "#TypeScript", "#RxJS", "#FrontendDevelopment",
+    "#WebApps", "#UserInterfaces", "#Accessibility", "#Testing"
 }
+
+ALLOWED_HASHTAGS = BROAD_HASHTAGS | NICHE_HASHTAGS
 
 EMOJI_REGEX = re.compile(r"[\U0001F300-\U0001FAFF]")
 WORD_REGEX = re.compile(r"\b[A-Za-z][A-Za-z0-9\-_]*\b")
@@ -281,7 +283,7 @@ def optimize_post_full(text: str) -> Dict[str, Any]:
         content = llm_response["choices"][0]["message"]["content"]
         data = json.loads(content)
     except Exception:
-        fallback_tags = random.sample(sorted(BROAD_HASHTAGS), 2) + random.sample(sorted(NICHE_HASHTAGS), 2)
+        fallback_tags = ["#SoftwareEngineering", "#SoftwareDevelopment", "#FrontendDevelopment", "#WebDevelopment"]
         data = {
             "optimized_post": cleaned_text,
             "llm_seo_score": 65,
@@ -298,6 +300,8 @@ def optimize_post_full(text: str) -> Dict[str, Any]:
             normalized = tag if tag.startswith('#') else f'#{tag}'
             hashtags.append(normalized.strip())
     
+    hashtags = [tag for tag in hashtags if tag in ALLOWED_HASHTAGS]
+
     seen = set()
     unique_hashtags = []
     for tag in hashtags:
@@ -305,6 +309,13 @@ def optimize_post_full(text: str) -> Dict[str, Any]:
             unique_hashtags.append(tag)
             seen.add(tag.lower())
     
+    if len(unique_hashtags) < 3:
+        for tag in ("#SoftwareEngineering", "#FrontendDevelopment", "#WebDevelopment", "#Technology"):
+            if tag not in unique_hashtags:
+                unique_hashtags.append(tag)
+            if len(unique_hashtags) >= 4:
+                break
+
     keywords_raw = data.get("keywords", [])
     keywords = [k.strip() for k in keywords_raw if isinstance(k, str) and k.strip()][:12]
     
