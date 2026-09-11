@@ -70,6 +70,7 @@ jobs:
           LINKEDIN_STORAGE_ONLY: "true"
           LINKEDIN_STORAGE_B64: ${{ secrets.LINKEDIN_STORAGE_B64 }}
           HEADLESS: "true"
+          ENABLE_EMAIL_REPORTS: "false"
           ENABLE_GROWTH: "true"
           GROWTH_MAX_COMMENTS_PER_DAY: ${{ vars.GROWTH_MAX_COMMENTS_PER_DAY || '8' }}
           GROWTH_MAX_CONNECTS_PER_DAY: ${{ vars.GROWTH_MAX_CONNECTS_PER_DAY || '12' }}

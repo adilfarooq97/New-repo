@@ -68,6 +68,7 @@ jobs:
           LINKEDIN_STORAGE_ONLY: "true"
           LINKEDIN_STORAGE_B64: ${{ secrets.LINKEDIN_STORAGE_B64 }}
           HEADLESS: "true"
+          ENABLE_EMAIL_REPORTS: "false"
           LOG_LEVEL_CONSOLE: "INFO"
         run: python run.py --collect-metrics
 

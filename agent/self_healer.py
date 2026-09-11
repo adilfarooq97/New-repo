@@ -5,7 +5,7 @@ import datetime
 import traceback
 from typing import Dict, List, Any, Optional, Callable
 from agent.logging_setup import get_logger
-from agent.email_reporter import send_email_report
+from agent.email_reporter import email_reports_enabled, send_email_report
 
 # Initialize logger
 logger = get_logger("self_healer")
@@ -363,7 +363,7 @@ def handle_error(error: Exception, phase: str, context: Dict = None, retry_item:
                 retry_queue.add_item(retry_item["type"], retry_item["data"], retry_item.get("max_retries", MAX_RETRIES))
         
         # Send error report email if requested
-        if send_report:
+        if send_report and email_reports_enabled():
             error_message = f"Error during {phase} phase: {str(error)}\n\n{traceback.format_exc()}"
             
             # Create a simple post-like structure for the error report
@@ -393,6 +393,8 @@ def handle_error(error: Exception, phase: str, context: Dict = None, retry_item:
             # Send the email report
             send_email_report(error_post, is_error=True)
             logger.info("Error report email sent")
+        elif send_report:
+            logger.info("Error email reporting disabled by ENABLE_EMAIL_REPORTS")
     except Exception as e:
         logger.error(f"Error in handle_error: {str(e)}")
 
@@ -427,11 +429,15 @@ def process_retry_queue():
                     retry_queue.update_item_status(item_id, "success")
                     logger.info(f"Successfully retried LinkedIn post for item {item_id}")
                 
-                elif item_type == "email":
+                elif item_type == "email" and email_reports_enabled():
                     # Retry sending email
                     send_email_report(item_data, is_error=item_data.get("is_error", False))
                     retry_queue.update_item_status(item_id, "success")
                     logger.info(f"Successfully retried email for item {item_id}")
+
+                elif item_type == "email":
+                    logger.info("Skipping queued email because email reporting is disabled")
+                    retry_queue.update_item_status(item_id, "success")
                 
                 else:
                     logger.warning(f"Unknown item type {item_type} for item {item_id}")

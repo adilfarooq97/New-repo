@@ -108,6 +108,7 @@ jobs:
           LOG_LEVEL_CONSOLE: "INFO"
           LOG_LEVEL_FILE: "DEBUG"
           ENABLE_POST: "true"
+          ENABLE_EMAIL_REPORTS: "false"
           ENABLE_FIRST_COMMENT: ${{ vars.ENABLE_FIRST_COMMENT || 'false' }}
         run: |
           RUN_ARGS=""

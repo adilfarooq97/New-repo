@@ -9,6 +9,11 @@ import ssl
 
 logger = logging.getLogger("linkedin-agent")
 
+
+def email_reports_enabled() -> bool:
+    """Return whether email reporting is explicitly enabled."""
+    return os.getenv("ENABLE_EMAIL_REPORTS", "false").lower() == "true"
+
 def send_email_report(post, is_error: bool = False, is_draft: bool = False, attachments=None):
     """Send an email report about the LinkedIn post or error.
 
@@ -19,6 +24,10 @@ def send_email_report(post, is_error: bool = False, is_draft: bool = False, atta
         attachments (list): List of file paths to attach to the email
     """
     try:
+        if not email_reports_enabled():
+            logger.info("Email reporting disabled by ENABLE_EMAIL_REPORTS.")
+            return False
+
         # Addresses and basic credentials (backward compatible)
         sender = os.getenv("EMAIL_USER") or os.getenv("EMAIL_SENDER")
         receiver = os.getenv("EMAIL_RECEIVER") or os.getenv("EMAIL_TO")
