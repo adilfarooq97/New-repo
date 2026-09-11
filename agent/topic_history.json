@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Integrating Reinforcement Learning for Automated Software Testing Solutions",
-    "timestamp": "2026-07-29T07:38:35.277173"
-  },
-  {
     "topic": "Do You Really Need to Pretrain Q-Functions for Online RL Fine-Tuning?",
     "timestamp": "2026-07-30T07:28:59.079385"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "TypeScript for Scalable Frontend Systems \u2014 2026-09-11",
     "timestamp": "2026-09-11T11:58:46.634422"
+  },
+  {
+    "topic": "Utilizing AI to Automate Angular Component Integration Testing",
+    "timestamp": "2026-09-11T12:06:17.167535"
   }
 ]
