@@ -647,7 +647,19 @@
       },
       "hash": "6f11df4518475bc4c698f277b50d6982",
       "topic": "Implementing AI Techniques for Automated Technical Debt Identification in Codebases"
+    },
+    {
+      "content": "I was debugging an Angular chat screen where the LLM could call a tool, then switch to another question before the result came back.\n\nThe first response still landed and changed the UI.\n\nI thought sub",
+      "timestamp": "2026-09-11T12:18:54.649710",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 38
+      },
+      "hash": "e775aa898e31d0eeed61e26db09fd2f9",
+      "topic": "Cancelling LLM Tool Calls with RxJS Race"
     }
   ],
-  "last_updated": "2026-09-11T16:28:13.625651"
+  "last_updated": "2026-09-11T12:18:54.652482"
 }
