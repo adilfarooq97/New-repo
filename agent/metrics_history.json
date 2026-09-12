@@ -662,16 +662,16 @@
     },
     {
       "content": "When I first started using AI-powered code review tools, I underestimated how they handle style consistency in Angular. I\u2019d often write my components without strict adherence to style guides. One day,",
-      "timestamp": "2026-09-11T19:22:18.211696",
+      "timestamp": "2026-09-12T08:58:45.120790",
       "engagement": {
-        "likes": 0,
+        "likes": 1,
         "comments": 0,
         "shares": 0,
-        "impressions": 72
+        "impressions": 124
       },
       "hash": "d99250d8ffda2348c17faa19288882be",
       "topic": "AI-Powered Code Review Tools for Instant Feedback on Frontend Development"
     }
   ],
-  "last_updated": "2026-09-11T19:22:18.216089"
+  "last_updated": "2026-09-12T08:58:45.123445"
 }
