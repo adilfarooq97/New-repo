@@ -674,16 +674,16 @@
     },
     {
       "content": "I was recently working on a feature to enhance accessibility in an Angular application using AI. The goal was to implement a text-to-speech function that would read out content for visually impaired u",
-      "timestamp": "2026-09-12T18:53:17.067421",
+      "timestamp": "2026-09-13T09:55:58.336492",
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "impressions": 76
+        "impressions": 150
       },
       "hash": "39499dc6397a1805fe4543539b5501b9",
       "topic": "Designing AI-Powered Accessibility Features for User Interfaces"
     }
   ],
-  "last_updated": "2026-09-12T18:53:17.074859"
+  "last_updated": "2026-09-13T09:55:58.437170"
 }

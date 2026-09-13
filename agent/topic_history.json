@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Leveraging Transfer Learning for Rare Disease Diagnosis in AI Development",
-    "timestamp": "2026-08-01T07:24:39.227847"
-  },
-  {
     "topic": "Learning to Trace Seiberg Dualities",
     "timestamp": "2026-08-02T07:28:31.706196"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Designing AI-Powered Accessibility Features for User Interfaces",
     "timestamp": "2026-09-12T08:58:45.734668"
+  },
+  {
+    "topic": "Implementing AI for State Management Optimization in Angular Applications",
+    "timestamp": "2026-09-13T09:55:59.168847"
   }
 ]
