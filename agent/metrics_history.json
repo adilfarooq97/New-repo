@@ -683,7 +683,19 @@
       },
       "hash": "39499dc6397a1805fe4543539b5501b9",
       "topic": "Designing AI-Powered Accessibility Features for User Interfaces"
+    },
+    {
+      "content": "When I started integrating AI for state management in my Angular app, I overlooked how async operations could mess with my store. I was using NgRx for state management, and everything seemed fine unti",
+      "timestamp": "2026-09-13T19:07:28.859370",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 115
+      },
+      "hash": "cb8eb8fbbd6fbab2cf1aa6f19cae2ca5",
+      "topic": "Implementing AI for State Management Optimization in Angular Applications"
     }
   ],
-  "last_updated": "2026-09-13T09:55:58.437170"
+  "last_updated": "2026-09-13T19:07:28.862514"
 }
