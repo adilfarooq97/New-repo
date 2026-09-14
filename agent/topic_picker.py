@@ -24,13 +24,13 @@ def get_weekday_topic() -> Dict[str, Any]:
     if not os.path.exists(calendar_path):
         weekday = datetime.datetime.now().weekday()
         weekday_topics = {
-            0: "Angular Application Architecture",
-            1: "AI API Implementation Details",
-            2: "RAG Pipelines in Production",
-            3: "Prompt Engineering Patterns Juniors Miss",
-            4: "Production Patterns Tutorials Skip",
-            5: "Things I Learned Building AI Products",
-            6: "Choosing Models and Tools"
+            0: "Frontend Application Architecture",
+            1: "Tailwind CSS and Design Systems",
+            2: "React Component Patterns",
+            3: "Angular Performance Optimization",
+            4: "Semantic HTML and Accessibility",
+            5: "Things I Learned Building Frontend Products",
+            6: "Reliable User Interfaces"
         }
         return {
             "primary_topic": weekday_topics.get(weekday, "Practical LLM Engineering"),
@@ -46,7 +46,7 @@ def get_weekday_topic() -> Dict[str, Any]:
     except Exception as e:
         logger.warning(f"Failed to load calendar: {e}")
         return {
-            "primary_topic": "Angular Application Architecture",
+            "primary_topic": "Frontend Application Architecture",
             "subtopic": None,
             "post_type": "general",
             "part": 1,
@@ -58,7 +58,7 @@ def get_weekday_topic() -> Dict[str, Any]:
     
     if not day_config:
         return {
-            "primary_topic": "Angular Application Architecture",
+            "primary_topic": "Frontend Application Architecture",
             "subtopic": None,
             "post_type": "general",
             "part": 1,
@@ -106,8 +106,8 @@ def generate_smart_hashtags(topic: str) -> List[str]:
     topic_tags = [f"#{word.replace(' ', '')}" for word in topic_words[:2]]
     
     niche_tags = [
-        "#Angular", "#TypeScript", "#RxJS", "#WebDevelopment",
-        "#JavaScript", "#SoftwareDevelopment", "#UserInterfaces"
+        "#Angular", "#React", "#TailwindCSS", "#TypeScript",
+        "#JavaScript", "#WebDevelopment", "#Accessibility"
     ]
     
     broad_tags = [
@@ -141,7 +141,7 @@ def get_niche_post(topic: Optional[str] = None, template: Optional[Dict[str, str
             cfg = yaml.safe_load(f)
     except Exception as e:
         logger.warning(f"Failed to load config: {e}")
-        cfg = {"niches": ["Angular Application Architecture"]}
+        cfg = {"niches": ["Frontend Application Architecture"]}
     
     if topic:
         primary_topic = topic
@@ -157,9 +157,9 @@ def get_niche_post(topic: Optional[str] = None, template: Optional[Dict[str, str
         part = topic_info["part"]
         total = topic_info["total"]
     else:
-        niches = cfg.get("niches", ["Angular Application Architecture"])
+        niches = cfg.get("niches", ["Frontend Application Architecture"])
         if not niches:
-            niches = ["Angular Application Architecture"]
+            niches = ["Frontend Application Architecture"]
         # pick a niche not used in this session if possible
         available = [n for n in niches if n not in _used_niches_session]
         if not available:

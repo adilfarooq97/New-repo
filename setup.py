@@ -31,8 +31,8 @@ def create_config_files():
         default_config = {
             'user': {
                 'name': 'AI Researcher',
-                'persona': 'Professional AI researcher and developer',
-                'voice': 'authoritative, conversational, insightful'
+                'persona': 'Frontend Developer working with HTML, Tailwind CSS, Angular, and React',
+                'voice': 'practical, conversational, clear, and useful'
             },
             'niches': [
                 'Artificial Intelligence',

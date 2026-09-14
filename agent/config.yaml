@@ -10,7 +10,11 @@
     "TypeScript for Scalable Frontend Systems",
     "Angular Testing and Maintainability",
     "Frontend Developer Productivity",
-    "Building Reliable User Interfaces"
+    "Building Reliable User Interfaces",
+    "Semantic HTML and Accessibility",
+    "Tailwind CSS Design Systems",
+    "React Component Architecture",
+    "Modern Frontend Performance"
   ],
   "posting": {
     "start_time": "10:00",
@@ -21,8 +25,8 @@
   },
   "user": {
     "name": "Muhammad Adil Farooq",
-    "persona": "Frontend Developer | Building scalable Angular applications and reliable user experiences",
-    "voice": "Practical Angular builder | First-person real experience | Simple, direct, useful lessons | No corporate hype",
+    "persona": "Frontend Developer | HTML, Tailwind CSS, Angular, and React | Building scalable user experiences",
+    "voice": "Practical frontend builder | First-person real experience | Simple, direct, useful lessons | No corporate hype",
     "linkedin_profile_url": "https://www.linkedin.com/in/muhammadadilfarooq/"
   }
 }

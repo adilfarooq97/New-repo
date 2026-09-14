@@ -17,14 +17,14 @@ OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 DEFAULT_MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-4o-mini")
 
 ENHANCED_PROMPT_CONSTRAINTS = """
-You are a working Angular frontend developer who builds real, maintainable web applications.
+You are a working frontend developer who builds real, maintainable web applications with HTML, Tailwind CSS, Angular, and React.
 You are writing a short LinkedIn post that teaches ONE practical thing.
 
 WHO YOU ARE WRITING FOR AND ABOUT:
 - Teach one specific thing that a junior engineer usually does NOT know, but that an
   associate/mid-level engineer knows well from real work. Examples of the *kind* of thing:
-    a gotcha with Angular rendering, an RxJS cancellation pattern, a TypeScript boundary,
-    a testing mistake, a performance issue, an accessibility detail, or an error you had to debug.
+    a gotcha with Angular or React rendering, a Tailwind CSS layout decision, an RxJS cancellation pattern,
+    a TypeScript boundary, a testing mistake, a performance issue, an accessibility detail, or an error you had to debug.
 - Make it feel earned from real building, not read from a tutorial.
 
 HOW TO WRITE IT (this is the most important part — write like a real human, not an AI):
@@ -212,7 +212,7 @@ in a real moment, not a feature list.
         return [
             {
                 "role": "user",
-                "content": f"""SYSTEM INSTRUCTION: You are a hands-on Angular frontend developer who ships maintainable web applications. You write in simple, direct, first-person English. You share real engineering lessons, never corporate hype.
+                "content": f"""SYSTEM INSTRUCTION: You are a hands-on frontend developer who ships maintainable web applications with HTML, Tailwind CSS, Angular, and React. You write in simple, direct, first-person English. You share real engineering lessons, never corporate hype.
 
 USER REQUEST:
 {user_prompt}"""
@@ -230,7 +230,7 @@ USER REQUEST:
                 f"use it to pick the angle and to avoid repeating openings that already flopped):\n{context}"
             )
 
-        user_prompt = f"""Write a short LinkedIn post about this area of Angular/frontend engineering: {niche_topic}.{context_instruction}
+        user_prompt = f"""Write a short LinkedIn post about this area of frontend engineering with HTML, Tailwind CSS, Angular, or React: {niche_topic}.{context_instruction}
 
 Do not "cover the topic". Instead, pick ONE small, specific, practical thing inside {niche_topic}
 that you learned the hard way while building — the kind of detail a junior engineer gets wrong and
@@ -243,7 +243,7 @@ work.
         return [
             {
                 "role": "user",
-                "content": f"""SYSTEM INSTRUCTION: You are a hands-on Angular frontend developer who ships maintainable web applications. You write in simple, direct, first-person English. You share real engineering lessons, never hype. If a regeneration hint is present in the CONTEXT, change the angle and the opening line.
+                "content": f"""SYSTEM INSTRUCTION: You are a hands-on frontend developer who ships maintainable web applications with HTML, Tailwind CSS, Angular, and React. You write in simple, direct, first-person English. You share real engineering lessons, never hype. If a regeneration hint is present in the CONTEXT, change the angle and the opening line.
 
 USER REQUEST:
 {user_prompt}"""

@@ -2,6 +2,8 @@
 
 Automates creation and posting of short, scannable, SEO-optimized LinkedIn content from GitHub repos and niche topics. Tracks metrics, avoids duplicates, and emails reports.
 
+The content profile is configured for a frontend developer working with HTML, Tailwind CSS, Angular, and React.
+
 ## Features
 
 - **Persistent memory (single source of truth)**: One SQLite store (`agent/agent_storage.db`) holds every published post — hash, topic, hook, hashtags, template_id, posted_at — plus its later engagement (likes/comments/impressions). Dedup, cooldowns, and learning all read from this one place, and CI commits it back so state survives runs.
@@ -117,7 +119,7 @@ python run.py --dry-run --force
 Edit these files and provide environment variables before running:
 
 - **agent/config.yaml**
-  - `user.name/persona/voice`: Author identity and tone
+  - `user.name/persona/voice`: Author identity and tone for HTML, Tailwind CSS, Angular, and React content
   - `niches`: List of niche topics
   - `posting`: start time, increment, timezone
 - **agent/repo_queue.json**

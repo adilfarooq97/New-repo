@@ -1,29 +1,30 @@
 # LinkedIn Content Calendar
-# Weekly seed topics for an Angular frontend developer sharing practical lessons.
+# Weekly seed topics for a frontend developer sharing practical lessons across HTML,
+# Tailwind CSS, Angular, and React.
 # NOTE: templates here are only a last-resort scaffold. The main flow generates
 # humanized story-style posts via the LLM (see agent/llm_generator.py). These
 # body_templates are deliberately plain — no emojis, no bullet scaffolding.
 
 weekly_schedule:
-  # Monday: Angular architecture
+  # Monday: Frontend architecture
   0:
-    primary_topic: "Angular Application Architecture"
+    primary_topic: "Frontend Application Architecture"
     subtopics:
-      - "Standalone components and feature boundaries"
+      - "Component boundaries in Angular and React"
       - "Smart and presentational component boundaries"
       - "Route-level lazy loading"
       - "Keeping shared services focused"
     post_type: "lesson"
     series_length: 4
 
-  # Tuesday: Angular performance
+  # Tuesday: Frontend styling systems
   1:
-    primary_topic: "Angular Performance Optimization"
+    primary_topic: "Tailwind CSS Design Systems"
     subtopics:
-      - "Change detection and rendering cost"
-      - "OnPush in real applications"
-      - "Lazy loading and bundle size"
-      - "Avoiding unnecessary subscriptions"
+      - "Responsive layout decisions"
+      - "Reusable utility patterns"
+      - "Keeping design tokens consistent"
+      - "Avoiding one-off styling drift"
     post_type: "lesson"
     series_length: 4
 
@@ -49,24 +50,24 @@ weekly_schedule:
     post_type: "lesson"
     series_length: 4
 
-  # Friday: Angular testing
+  # Friday: Frontend testing
   4:
-    primary_topic: "Angular Testing and Maintainability"
+    primary_topic: "Frontend Testing and Maintainability"
     subtopics:
       - "Testing components without brittle selectors"
       - "Testing services at the right boundary"
-      - "Mocking HTTP requests clearly"
+      - "Testing UI behavior clearly"
       - "Keeping tests useful during refactors"
     post_type: "lesson"
     series_length: 4
 
   # Saturday: Frontend developer lessons
   5:
-    primary_topic: "Things I Learned Building Angular Products"
+    primary_topic: "Things I Learned Building Frontend Products"
     subtopics:
       - "A UI bug that taught me something"
       - "A frontend tool that changed my workflow"
-      - "A mistake I kept repeating in Angular"
+      - "A mistake I kept repeating in Angular or React"
       - "Something I wish I knew earlier"
     post_type: "story"
     series_length: 4

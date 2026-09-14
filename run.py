@@ -142,6 +142,7 @@ class LinkedInAgent:
         self.logger = get_logger("linkedin_agent", {"run_id": self.run_id})
         self.metrics = get_metrics_tracker("linkedin_agent_metrics.json")
         self.posted = False
+        self.skipped = False
         self.enable_post = not self.dry_run and os.getenv("ENABLE_POST", "true").lower() == "true"
         self._digest = ""  # performance digest injected into generation prompts
         storage.init_db()
@@ -664,6 +665,7 @@ class LinkedInAgent:
             # 1. Check if it's time to post
             if not self._check_posting_schedule():
                 self.logger.info("Outside of posting window, exiting.", extra={"event": "workflow_exit_scheduled"})
+                self.skipped = True
                 return False
 
             self.logger.info(f"Posting mode: {'live' if self.enable_post else 'draft'}", 
@@ -804,7 +806,7 @@ def main_cli():
 
         # Regular workflow execution
         agent = LinkedInAgent(dry_run=args.dry_run, force_post=args.force)
-        if not agent.run():
+        if not agent.run() and not agent.skipped:
             sys.exit(1)
 
     except Exception as e:
