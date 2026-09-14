@@ -35,6 +35,7 @@ HOW TO WRITE IT (this is the most important part — write like a real human, no
   English speaker from Pakistan — short and plain sentences, not fancy vocabulary. Do NOT
   over-polish it into perfect native "corporate LinkedIn" English.
 - Length: 90-180 words. Under 1,300 characters.
+- Format: write 3 to 5 short paragraphs, with one blank line between paragraphs.
 
 HARD BANS (these are the tells that make writing look AI-generated — never do them):
 - No emojis. No bullet points, no numbered lists, no markdown, no bold, no section labels.

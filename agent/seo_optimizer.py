@@ -23,6 +23,7 @@ Original post:
 Rules:
 - Preserve the author's voice, story, and simple wording. Do NOT rewrite it into polished
   corporate English. Small grammar fixes only.
+- Preserve paragraph breaks and return 3 to 5 short paragraphs separated by one blank line.
 - Keep it 90-180 words, under 1,300 characters.
 - No emojis, no bullet points, no numbered lists, no bold, no section labels.
 - Do NOT stuff keywords. Do NOT add hype words (game-changer, seamless, leverage, unlock, etc).
