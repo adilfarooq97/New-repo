@@ -487,19 +487,28 @@ class LinkedInPoster:
         editor.click()
         _random_wait(200, 500)
         
-        # Use fill() instead of type() to avoid timeout issues
+        # Enter paragraphs separately so LinkedIn preserves visible line breaks.
         try:
-            editor.fill(text)
+            paragraphs = text.replace("\r\n", "\n").split("\n\n")
+            for paragraph_index, paragraph in enumerate(paragraphs):
+                lines = paragraph.split("\n")
+                for line_index, line in enumerate(lines):
+                    if line:
+                        self.page.keyboard.insert_text(line)
+                    if line_index < len(lines) - 1:
+                        self.page.keyboard.press("Shift+Enter")
+                if paragraph_index < len(paragraphs) - 1:
+                    self.page.keyboard.press("Enter")
+                    self.page.keyboard.press("Enter")
             _random_wait(400, 900)
         except PlaywrightTimeoutError:
-            # Fallback: try typing with shorter delay
-            logger.warning("fill() timed out, trying type() as fallback")
+            # Fallback: use fill if keyboard insertion times out.
+            logger.warning("Keyboard paragraph insertion timed out, trying fill() as fallback")
             try:
-                editor.type(text, delay=10)
+                editor.fill(text)
                 _random_wait(400, 900)
             except PlaywrightTimeoutError:
-                # Last resort: use keyboard input
-                logger.warning("type() timed out, using keyboard input")
+                logger.warning("fill() timed out, using keyboard input")
                 self.page.keyboard.type(text, delay=5)
                 _random_wait(400, 900)
 
