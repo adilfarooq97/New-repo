@@ -695,7 +695,19 @@
       },
       "hash": "cb8eb8fbbd6fbab2cf1aa6f19cae2ca5",
       "topic": "Implementing AI for State Management Optimization in Angular Applications"
+    },
+    {
+      "content": "I learned a valuable lesson about change detection strategies in Angular while working on a project that involved a complex form with lots of data binding. Initially, I used the default change detecti",
+      "timestamp": "2026-09-14T20:42:11.642558",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 42
+      },
+      "hash": "21ae2f6c30658c2581560b093c166007",
+      "topic": "Utilizing Change Detection Strategies for Angular Performance Improvements"
     }
   ],
-  "last_updated": "2026-09-14T17:49:07.183861"
+  "last_updated": "2026-09-14T20:42:11.645578"
 }
