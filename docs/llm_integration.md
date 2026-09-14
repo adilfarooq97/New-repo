@@ -1,14 +1,14 @@
-# LLM Integration (DeepSeek R1 via OpenRouter)
+# LLM Integration (Frontend Content via OpenRouter)
 
 ## Overview
-This agent can generate professional, SEO-friendly LinkedIn posts using the DeepSeek R1 model via OpenRouter.
+This agent generates short, practical LinkedIn posts for a frontend developer working with HTML, Tailwind CSS, Angular, React, TypeScript, and UI/UX.
 
 ## Setup
 1. Create a `.env` file in the repository root:
    
    ```
    OPENROUTER_API_KEY=your_openrouter_key
-   OPENROUTER_MODEL=google/gemma-3n-e2b-it:free
+   OPENROUTER_MODEL=openai/gpt-4o-mini
    ```
 
 2. Install dependencies:
@@ -22,7 +22,7 @@ This agent can generate professional, SEO-friendly LinkedIn posts using the Deep
 ## How it works
 - `agent/llm_generator.py` calls OpenRouter chat completions with prompts:
   - Repo posts: Includes name, description, README summary, topics, and URL.
-  - Niche posts: Topic-focused with requirements for trends/use cases/research + question.
+   - Niche posts: Topic-focused stories about frontend engineering and user experience.
 - The output is parsed to extract title, body, and up to 7 hashtags.
 - SEO metrics are computed via `seo_optimizer.py`.
 

@@ -18,7 +18,7 @@ def fetch_recent_github_activity(username: str, days: int = 2, token: Optional[s
     url = f"https://api.github.com/users/{username}/events/public"
     headers = {
         "Accept": "application/vnd.github.v3+json",
-        "User-Agent": "AI-LinkedIn-Agent"
+        "User-Agent": "Frontend-LinkedIn-Content-Agent"
     }
     
     # Add token if provided

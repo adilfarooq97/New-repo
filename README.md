@@ -1,8 +1,8 @@
-# AI LinkedIn Agent
+# Frontend LinkedIn Content Agent
 
 Automates creation and posting of short, scannable, SEO-optimized LinkedIn content from GitHub repos and niche topics. Tracks metrics, avoids duplicates, and emails reports.
 
-The content profile is configured for a frontend developer working with HTML, Tailwind CSS, Angular, and React.
+The content profile is configured for a frontend developer working with HTML, Tailwind CSS, Angular, React, TypeScript, and UI/UX.
 
 ## Features
 
@@ -11,7 +11,7 @@ The content profile is configured for a frontend developer working with HTML, Ta
 - **Feedback loop (learning)**: Before each post, a performance digest of your best/worst past posts is injected into the generation prompt; drafts that open like historically low-performing posts are regenerated.
 - **Bandit topic selection**: Epsilon-greedy over niches — mostly exploit the best-performing topic by measured engagement, sometimes explore — falling back to round-robin while there's no data yet.
 - **Engagement collection**: A separate scheduled job scrapes likes/comments/**impressions** at ~T+24h/T+48h (Playwright, same browser stack as posting) and joins them back to the stored post.
-- **Smart content strategy**: Repo posts → trending (ArXiv) → bandit niche → safe fallback.
+- **Smart content strategy**: Repo posts → configured frontend niches → safe fallback.
 - **LLM-powered generation**: OpenRouter with strict style/length constraints and specificity checks.
 - **Slot-based scheduling**: Rotates through `candidate_times` so different posting times can be A/B-tested; posts at most once per day.
 - **Growth engine (opt-in)**: First-comment on your own post, LLM-generated niche comments, and connection requests — all rate-limited with human-like pacing.
@@ -26,7 +26,7 @@ The content profile is configured for a frontend developer working with HTML, Ta
 2. **Context fetch**
    - GitHub activity (if `GITHUB_USERNAME`/token present) and LinkedIn engagement (if creds present).
 3. **Content strategy selection**
-   - Priority: repo queue → calendar (weekday) → niches from config → trending topics (ArXiv) → generic fallback.
+  - Priority: repo queue → calendar (weekday) → configured frontend niches → generic fallback.
 4. **Content generation**
    - LLM generates the post using strict constraints (length, tone, structure, hashtags).
    - Cleans labels, extracts up to 5 hashtags, and runs SEO optimizer.
@@ -119,7 +119,7 @@ python run.py --dry-run --force
 Edit these files and provide environment variables before running:
 
 - **agent/config.yaml**
-  - `user.name/persona/voice`: Author identity and tone for HTML, Tailwind CSS, Angular, and React content
+  - `user.name/persona/voice`: Author identity and tone for HTML, Tailwind CSS, Angular, React, TypeScript, and UI/UX content
   - `niches`: List of niche topics
   - `posting`: start time, increment, timezone
 - **agent/repo_queue.json**
@@ -131,7 +131,7 @@ Edit these files and provide environment variables before running:
 
 - **OpenRouter**
   - `OPENROUTER_API_KEY` (required for LLM)
-  - `OPENROUTER_MODEL` (default: `alibaba/tongyi-deepresearch-30b-a3b:free`)
+  - `OPENROUTER_MODEL` (default: `openai/gpt-4o-mini`)
 - **GitHub**
   - `GITHUB_USERNAME` (default in code: `AHmedaf123`)
   - `GH_API_TOKEN` or `GITHUB_TOKEN`
@@ -200,10 +200,10 @@ You have two options:
 
 ```bash
 # Preview only
-python scripts/post_topic.py --topic "AI for Protein Design" --dry-run
+python scripts/post_topic.py --topic "Accessible UI patterns in React and Angular" --dry-run
 
 # Post live (requires LinkedIn creds and ENABLE_POST=true)
-python scripts/post_topic.py --topic "AI for Protein Design"
+python scripts/post_topic.py --topic "Accessible UI patterns in React and Angular"
 ```
 
 - Saves `post_preview.txt` and `latest_post.json`. Honors `ENABLE_POST`.

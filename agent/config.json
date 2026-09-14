@@ -14,7 +14,9 @@
     "Semantic HTML and Accessibility",
     "Tailwind CSS Design Systems",
     "React Component Architecture",
-    "Modern Frontend Performance"
+    "Modern Frontend Performance",
+    "TypeScript for Frontend Systems",
+    "UI/UX Design and Product Thinking"
   ],
   "posting": {
     "start_time": "10:00",
@@ -25,7 +27,7 @@
   },
   "user": {
     "name": "Muhammad Adil Farooq",
-    "persona": "Frontend Developer | HTML, Tailwind CSS, Angular, and React | Building scalable user experiences",
+    "persona": "Frontend Developer | HTML, Tailwind CSS, Angular, React, and TypeScript | Building thoughtful UI/UX",
     "voice": "Practical frontend builder | First-person real experience | Simple, direct, useful lessons | No corporate hype",
     "linkedin_profile_url": "https://www.linkedin.com/in/muhammadadilfarooq/"
   }

@@ -74,7 +74,7 @@ def fetch_repo_details(repo: str) -> dict:
     
     return {
         "name": data["name"],
-        "desc": data.get("description") or "An AI-based project",
+        "desc": data.get("description") or "A frontend software project",
         "readme": readme_content,
         "url": data["html_url"],
         "language": data.get("language", "Python"),

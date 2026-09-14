@@ -30,19 +30,19 @@ def create_config_files():
     if not config_path.exists():
         default_config = {
             'user': {
-                'name': 'AI Researcher',
-                'persona': 'Frontend Developer working with HTML, Tailwind CSS, Angular, and React',
+                'name': 'Frontend Developer',
+                'persona': 'Frontend Developer working with HTML, Tailwind CSS, Angular, React, and TypeScript with a UI/UX focus',
                 'voice': 'practical, conversational, clear, and useful'
             },
             'niches': [
-                'Artificial Intelligence',
-                'Machine Learning',
-                'Deep Learning',
-                'Natural Language Processing',
-                'Computer Vision',
-                'AI Ethics',
-                'MLOps',
-                'Generative AI'
+                'Semantic HTML and Accessibility',
+                'Tailwind CSS Design Systems',
+                'Angular Application Architecture',
+                'React Component Architecture',
+                'TypeScript for Frontend Systems',
+                'UI/UX Design and Product Thinking',
+                'Frontend Performance Optimization',
+                'Reliable User Interfaces'
             ],
             'posting': {
                 'start_time': '09:00',
@@ -61,56 +61,44 @@ def create_config_files():
         default_calendar = {
             'weekly_schedule': {
                 '0': {  # Monday
-                    'primary_topic': 'AI Research',
-                    'subtopics': ['Latest Papers', 'Research Trends', 'Breakthrough Studies'],
-                    'post_type': 'research',
-                    'series_length': 1
+                    'primary_topic': 'Semantic HTML and Accessibility',
+                    'subtopics': ['Accessible landmarks', 'Keyboard-friendly interactions', 'Useful form errors'],
+                    'post_type': 'lesson',
+                    'series_length': 4
                 },
                 '1': {  # Tuesday
-                    'primary_topic': 'Machine Learning',
-                    'subtopics': ['Algorithms', 'Model Training', 'Performance Optimization'],
-                    'post_type': 'technical',
-                    'series_length': 1
+                    'primary_topic': 'Tailwind CSS Design Systems',
+                    'subtopics': ['Responsive layout decisions', 'Reusable utility patterns', 'Design token consistency'],
+                    'post_type': 'lesson',
+                    'series_length': 4
                 },
                 '2': {  # Wednesday
-                    'primary_topic': 'AI Applications',
-                    'subtopics': ['Industry Use Cases', 'Real-world Solutions', 'Case Studies'],
-                    'post_type': 'case-study',
-                    'series_length': 1
+                    'primary_topic': 'Angular and React Component Architecture',
+                    'subtopics': ['Component boundaries', 'State ownership', 'Reusable UI contracts'],
+                    'post_type': 'lesson',
+                    'series_length': 4
                 },
                 '3': {  # Thursday
-                    'primary_topic': 'AI Tools & Frameworks',
-                    'subtopics': ['New Tools', 'Framework Updates', 'Development Tips'],
-                    'post_type': 'how-to',
-                    'series_length': 1
+                    'primary_topic': 'TypeScript for Frontend Systems',
+                    'subtopics': ['Typed API boundaries', 'Discriminated UI state', 'Safer component inputs'],
+                    'post_type': 'lesson',
+                    'series_length': 4
                 },
                 '4': {  # Friday
-                    'primary_topic': 'AI Ethics & Future',
-                    'subtopics': ['Ethical AI', 'Future Predictions', 'Societal Impact'],
-                    'post_type': 'opinion',
-                    'series_length': 1
+                    'primary_topic': 'UI/UX Design and Product Thinking',
+                    'subtopics': ['Useful empty states', 'Recoverable error flows', 'Designing for user intent'],
+                    'post_type': 'story',
+                    'series_length': 4
                 }
             },
             'post_templates': {
-                'research': {
-                    'title_template': 'Research Spotlight: {topic}',
-                    'body_template': '🔬 Diving into {topic} research today.\n\nKey findings and implications for the field.\n\n{hashtags}'
+                'lesson': {
+                    'title_template': '{topic}',
+                    'body_template': 'A practical lesson from building {topic}.\n\nWhat I learned and how I apply it now.\n\n{hashtags}'
                 },
-                'technical': {
-                    'title_template': 'Technical Deep Dive: {topic}',
-                    'body_template': '⚙️ Technical insights on {topic}.\n\nPractical applications and implementation details.\n\n{hashtags}'
-                },
-                'case-study': {
-                    'title_template': 'Case Study: {topic}',
-                    'body_template': '📊 Real-world application of {topic}.\n\nLessons learned and best practices.\n\n{hashtags}'
-                },
-                'how-to': {
-                    'title_template': 'How to: {topic}',
-                    'body_template': '🛠️ Step-by-step guide to {topic}.\n\nPractical tips and implementation advice.\n\n{hashtags}'
-                },
-                'opinion': {
-                    'title_template': 'My Take on {topic}',
-                    'body_template': '💭 Thoughts on {topic} and its future impact.\n\nWhat this means for our industry.\n\n{hashtags}'
+                'story': {
+                    'title_template': '{topic}',
+                    'body_template': 'A frontend problem around {topic} taught me something useful.\n\nHere is the detail I now watch for.\n\n{hashtags}'
                 }
             }
         }
@@ -141,11 +129,11 @@ def create_env_template():
     """Create .env template file"""
     env_template_path = Path('.env.template')
     if not env_template_path.exists():
-        template_content = """# AI LinkedIn Agent Environment Variables
+        template_content = """# Frontend LinkedIn Content Agent Environment Variables
 
 # OpenRouter API (Required)
 OPENROUTER_API_KEY=your_openrouter_api_key_here
-OPENROUTER_MODEL=google/gemma-3n-e2b-it:free
+OPENROUTER_MODEL=openai/gpt-4o-mini
 
 # GitHub API (Optional, for repo posts)
 GITHUB_USERNAME=your_github_username

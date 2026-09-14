@@ -88,7 +88,7 @@ def generate_comment(post_text: str, as_author: bool = False) -> Optional[str]:
     messages = [{
         "role": "user",
         "content": (
-            "SYSTEM INSTRUCTION: You are an AI/ML researcher engaging authentically on LinkedIn.\n\n"
+            "SYSTEM INSTRUCTION: You are a frontend developer working with HTML, Tailwind CSS, Angular, React, and TypeScript, with a strong UI/UX perspective. Engage authentically on LinkedIn.\n\n"
             f"{instruction}\n\nPOST:\n{post_text[:1200]}\n\nReply with the comment text only."
         ),
     }]

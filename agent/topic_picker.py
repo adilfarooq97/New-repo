@@ -33,7 +33,7 @@ def get_weekday_topic() -> Dict[str, Any]:
             6: "Reliable User Interfaces"
         }
         return {
-            "primary_topic": weekday_topics.get(weekday, "Practical LLM Engineering"),
+            "primary_topic": weekday_topics.get(weekday, "Frontend Application Architecture"),
             "subtopic": None,
             "post_type": "general",
             "part": 1,

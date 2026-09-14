@@ -51,14 +51,14 @@ def save_preview(post: dict, full_text: str, path_txt: str = "post_preview.txt")
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate and (optionally) post a LinkedIn update for a niche topic.")
-    parser.add_argument("--topic", required=False, default="AI-based Genetic Mutations We Should Fear", help="Topic to generate the post about")
+    parser.add_argument("--topic", required=False, default="Accessible UI patterns in React and Angular", help="Topic to generate the post about")
     parser.add_argument("--dry-run", action="store_true", help="Only generate and save preview without posting to LinkedIn")
     args = parser.parse_args()
 
     topic = args.topic
 
     try:
-        # Generate the post via OpenRouter DeepSeek R1 (configured in llm_generator)
+        # Generate the frontend post via the configured OpenRouter model.
         post = generate_post(niche=topic)
         if not post:
             print("Failed to generate post.")

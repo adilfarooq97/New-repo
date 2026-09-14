@@ -62,8 +62,8 @@ If you want to attempt posting in CI:
 
 The GitHub Actions workflow is configured to:
 
-- **Default**: `ENABLE_POST=false` (content generation only)
-- **Override**: Set `ENABLE_POST=true` in repository secrets to enable posting
+- **Default**: `ENABLE_POST=true` for the scheduled workflow
+- **Override**: Set `ENABLE_POST=false` in workflow environment settings for content generation only
 - **Fallback**: If posting fails, the workflow continues (doesn't fail the build)
 
 ## Troubleshooting

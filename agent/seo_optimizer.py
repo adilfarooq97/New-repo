@@ -15,7 +15,7 @@ pick hashtags that maximize reach. You must NOT corporate-ify or over-polish it.
 Return only valid JSON with no additional text."""
 
 SEO_USER_TEMPLATE = """Lightly clean up this LinkedIn post. It is meant to sound like a real
-Frontend developer working with HTML, Tailwind CSS, Angular, and React, telling a small story from their own work, in simple direct English.
+Frontend developer working with HTML, Tailwind CSS, Angular, React, and TypeScript, with a UI/UX perspective, telling a small story from their own work in simple direct English.
 
 Original post:
 {post}
@@ -28,7 +28,7 @@ Rules:
 - Do NOT stuff keywords. Do NOT add hype words (game-changer, seamless, leverage, unlock, etc).
 - Hashtags: exactly 3 to 5, for maximum reach. Use only software development tags such as
 #SoftwareEngineering, #SoftwareDevelopment, #Angular, #React, #TailwindCSS, #TypeScript,
-#Frontend, #WebDevelopment, #JavaScript, or #Technology. Never use AI, biology, medical, finance,
+#Frontend, #WebDevelopment, #JavaScript, #UX, or #UIDesign. Never use AI, biology, medical, finance,
 #or any unrelated industry tag. Tags must match the actual post topic. Place them at the end.
 - Preserve any @mentions and links.
 

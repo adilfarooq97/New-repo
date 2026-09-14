@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Health check script for AI LinkedIn Agent
+Health check script for frontend LinkedIn content agent
 Validates environment setup and dependencies
 """
 
@@ -97,7 +97,7 @@ def check_playwright_installation():
 
 def main():
     """Run all health checks"""
-    print("🔍 AI LinkedIn Agent Health Check")
+    print("🔍 Frontend LinkedIn Agent Health Check")
     print("=" * 40)
     
     checks = [

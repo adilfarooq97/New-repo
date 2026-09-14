@@ -4,7 +4,6 @@ import random
 import yaml
 import datetime
 import re
-import requests
 from typing import Dict, List, Any, Optional, Tuple
 from agent import storage
 from agent.logging_setup import get_logger
@@ -70,8 +69,7 @@ def is_topic_cooldown(topic: str, days: int = 7) -> bool:
 
 
 def get_next_category() -> str:
-    """Plain round robin over the fixed content categories (config.yaml niches:
-    Angular architecture / Angular performance / frontend engineering).
+    """Plain round robin over the configured frontend content categories.
 
     Repeating a category every 3rd day is expected and fine — a category is a
     broad bucket, not a topic. What must never repeat is the specific topic
@@ -79,7 +77,7 @@ def get_next_category() -> str:
     """
     categories = load_niches_list()
     if not categories:
-        return "Angular Application Architecture"
+        return "Frontend Application Architecture"
 
     idx = -1
     if os.path.exists(NICHE_INDEX_PATH):
@@ -158,47 +156,6 @@ def load_engagement_metrics() -> Dict:
         return {"posts": []}
 
 
-def fetch_trending_ai_topics() -> List[Dict]:
-    """Fetch trending AI topics from ArXiv API."""
-    try:
-        # Query for recent AI/ML papers
-        url = "http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=10"
-        response = requests.get(url, timeout=10)
-        
-        if response.status_code != 200:
-            logger.error(f"ArXiv API returned {response.status_code}")
-            return []
-        
-        content = response.text
-        topics = []
-        
-        # Simple regex parsing (robust enough for our needs)
-        entries = re.findall(r"<entry>.*?</entry>", content, re.DOTALL)
-        
-        for entry in entries[:5]:
-            title_match = re.search(r"<title>(.*?)</title>", entry, re.DOTALL)
-            summary_match = re.search(r"<summary>(.*?)</summary>", entry, re.DOTALL)
-            
-            if title_match and summary_match:
-                title = title_match.group(1).replace("\n", " ").strip()
-                summary = summary_match.group(1).replace("\n", " ").strip()
-                
-                # Check duplication against history using just the title (not the "New Research:" prefix)
-                # This ensures the cooldown check matches what we'll save to history
-                if not is_topic_cooldown(title, days=14):  # Stricter check for specific papers
-                    topics.append({
-                        "topic": title,  # Use plain title for consistency
-                        "context": summary[:500],  # Pass summary for context
-                        "source": "arxiv",
-                        "timestamp": datetime.datetime.now().isoformat()
-                    })
-        
-        return topics
-    except Exception as e:
-        logger.error(f"Error fetching trending topics: {str(e)}")
-        return []
-
-
 def get_best_performing_template(engagement_metrics: Dict = None) -> Optional[Dict]:
     """Best performing template_id based on measured engagement (from storage)."""
     try:
@@ -229,19 +186,6 @@ def _is_reword_of_past_topic(topic: str, used: List[str]) -> Tuple[bool, float]:
     return sim > TOPIC_SIMILARITY_GUARD, sim
 
 
-def _fresh_research_topic(used: List[str]) -> Optional[str]:
-    """Real, currently-published AI research/news from ArXiv — a different paper
-    each time, so it can't repeat or reword anything by construction."""
-    for candidate in fetch_trending_ai_topics():
-        topic = candidate["topic"]
-        is_reword, sim = _is_reword_of_past_topic(topic, used)
-        if not is_reword:
-            save_topic_history(topic)
-            logger.info(f"Content strategy: fresh research topic from ArXiv: {topic}")
-            return topic
-    return None
-
-
 def _fresh_generated_topic(category: str, used: List[str]) -> Optional[str]:
     """Ask the LLM for one brand-new, narrow topic inside `category`, rejecting
     anything that repeats or reworks a topic already used (checked against the
@@ -251,7 +195,7 @@ def _fresh_generated_topic(category: str, used: List[str]) -> Optional[str]:
     for attempt in range(MAX_TOPIC_GEN_ATTEMPTS):
         avoid_block = "\n".join(f"- {t}" for t in used[-40:]) or "(none yet)"
         prompt = (
-            "Generate ONE new, specific, narrow topic for a LinkedIn post about AI, "
+            "Generate ONE new, specific, narrow topic for a LinkedIn post about frontend development, "
             f"inside this category: {category}.\n\n"
             "It must be concrete and narrow enough that one practical post can cover it "
             "(not a broad area, not a rehash of something already covered).\n\n"
@@ -294,8 +238,6 @@ def get_next_fresh_topic() -> Dict[str, str]:
     used = _all_used_topics()
 
     topic = None
-    if category.strip().lower().startswith("ai research"):
-        topic = _fresh_research_topic(used)
     if not topic:
         topic = _fresh_generated_topic(category, used)
     if not topic:
@@ -311,10 +253,9 @@ def get_next_topic_strategy() -> Dict:
 
     Priority:
       1. Repo queue (if any)
-      2. Fresh topic inside one of the 3 fixed content categories (AI Research &
-         New Advancements / AI Engineering / AI Development), round robin over
-         the category, always a brand-new specific topic that has never been
-         used before and is not a reword of anything posted previously.
+        2. Fresh topic inside the current configured frontend category, always a
+            brand-new specific topic that has never been used before and is not a
+            reword of anything posted previously.
       3. Generic fallback
     """
     try:
@@ -345,8 +286,8 @@ def get_next_topic_strategy() -> Dict:
     except Exception as e:
         logger.error(f"Critical error in content strategy: {str(e)}")
 
-    logger.info("Content strategy: Using generic AI topic fallback")
-    fallback_topic = "Practical LLM Engineering"
+    logger.info("Content strategy: Using generic frontend topic fallback")
+    fallback_topic = "Designing Reliable Frontend User Experiences"
     save_topic_history(fallback_topic)
     return {
         "source": "fallback",
@@ -372,7 +313,7 @@ def get_next_content_strategy():
         logger.error(f"Error in get_next_content_strategy: {str(e)}")
         return {
             "source": "fallback",
-            "topic": "Practical LLM Engineering",
+            "topic": "Designing Reliable Frontend User Experiences",
             "template": None,
             "template_id": "fallback",
             "priority_score": 1
