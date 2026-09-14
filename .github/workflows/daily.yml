@@ -31,7 +31,7 @@ jobs:
     steps:
       # --- Always pull the latest main branch ---
       - name: Checkout latest main branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: main
           fetch-depth: 0
@@ -45,13 +45,13 @@ jobs:
 
       # --- Setup Python ---
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
       # --- Cache pip dependencies ---
       - name: Cache pip dependencies
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}-${{ github.run_id }}
@@ -66,7 +66,7 @@ jobs:
 
       # --- Cache Playwright browsers ---
       - name: Cache Playwright browsers
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.cache/ms-playwright
           key: ${{ runner.os }}-playwright-${{ hashFiles('**/requirements.txt') }}-${{ github.run_id }}
@@ -125,7 +125,7 @@ jobs:
       # --- Upload artifacts on failure ---
       - name: Upload artifacts on failure
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: debug-artifacts
           path: |
