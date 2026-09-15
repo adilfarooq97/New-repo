@@ -707,7 +707,19 @@
       },
       "hash": "21ae2f6c30658c2581560b093c166007",
       "topic": "Utilizing Change Detection Strategies for Angular Performance Improvements"
+    },
+    {
+      "content": "I recently worked on a search feature that needed to be fast and responsive. We used RxJS for debouncing the input, which sounded straightforward at first. I thought I could just apply the debounceTim",
+      "timestamp": "2026-09-15T19:56:06.048431",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 37
+      },
+      "hash": "87b580f11f1bddacc398eec924dae255",
+      "topic": "Using RxJS for Optimizing Debouncing in Search Inputs"
     }
   ],
-  "last_updated": "2026-09-15T09:44:34.264237"
+  "last_updated": "2026-09-15T19:56:06.055273"
 }
