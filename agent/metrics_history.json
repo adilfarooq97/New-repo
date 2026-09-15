@@ -698,7 +698,7 @@
     },
     {
       "content": "I learned a valuable lesson about change detection strategies in Angular while working on a project that involved a complex form with lots of data binding. Initially, I used the default change detecti",
-      "timestamp": "2026-09-14T20:42:11.642558",
+      "timestamp": "2026-09-15T09:44:33.988931",
       "engagement": {
         "likes": 0,
         "comments": 0,
@@ -709,5 +709,5 @@
       "topic": "Utilizing Change Detection Strategies for Angular Performance Improvements"
     }
   ],
-  "last_updated": "2026-09-14T20:42:11.645578"
+  "last_updated": "2026-09-15T09:44:34.264237"
 }
