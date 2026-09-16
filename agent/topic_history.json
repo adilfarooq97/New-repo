@@ -1,9 +1,5 @@
 [
   {
-    "topic": "AI Techniques for Real-Time Anomaly Detection in Software Systems",
-    "timestamp": "2026-08-04T07:31:38.899310"
-  },
-  {
     "topic": "TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning",
     "timestamp": "2026-08-05T07:33:49.176287"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Using RxJS for Optimizing Debouncing in Search Inputs",
     "timestamp": "2026-09-15T09:44:35.405619"
+  },
+  {
+    "topic": "TypeScript Generics for Creating Reusable Component Libraries in Frontend Development",
+    "timestamp": "2026-09-16T09:38:46.249801"
   }
 ]
