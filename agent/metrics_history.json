@@ -719,7 +719,19 @@
       },
       "hash": "87b580f11f1bddacc398eec924dae255",
       "topic": "Using RxJS for Optimizing Debouncing in Search Inputs"
+    },
+    {
+      "content": "I was working on a component library using TypeScript and React, trying to make my components flexible with generics. I thought I understood how to use them, but I ran into a frustrating issue with pr",
+      "timestamp": "2026-09-16T19:49:08.736098",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 114
+      },
+      "hash": "ae61dc58a92fc9c0167ada4a461965f2",
+      "topic": "TypeScript Generics for Creating Reusable Component Libraries in Frontend Development"
     }
   ],
-  "last_updated": "2026-09-16T09:38:45.449013"
+  "last_updated": "2026-09-16T19:49:08.827478"
 }
