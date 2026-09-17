@@ -731,7 +731,19 @@
       },
       "hash": "ae61dc58a92fc9c0167ada4a461965f2",
       "topic": "TypeScript Generics for Creating Reusable Component Libraries in Frontend Development"
+    },
+    {
+      "content": "I learned something important about isolated unit tests in Angular while working on a component that had several services injected. Initially, I used the TestBed to provide the services directly, thin",
+      "timestamp": "2026-09-17T19:57:52.925165",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 25
+      },
+      "hash": "3757c1fc680cd58647d264660809789e",
+      "topic": "Creating Isolated Unit Tests for Angular Components with Dependency Injection"
     }
   ],
-  "last_updated": "2026-09-17T09:46:44.578994"
+  "last_updated": "2026-09-17T19:57:52.930336"
 }
