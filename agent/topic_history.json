@@ -1,9 +1,5 @@
 [
   {
-    "topic": "TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning",
-    "timestamp": "2026-08-05T07:33:49.176287"
-  },
-  {
     "topic": "Using AI for Adaptive Load Balancing in Cloud Infrastructure",
     "timestamp": "2026-08-06T07:34:28.221546"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "TypeScript Generics for Creating Reusable Component Libraries in Frontend Development",
     "timestamp": "2026-09-16T09:38:46.249801"
+  },
+  {
+    "topic": "Creating Isolated Unit Tests for Angular Components with Dependency Injection",
+    "timestamp": "2026-09-17T09:46:45.402981"
   }
 ]
