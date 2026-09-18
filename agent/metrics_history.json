@@ -743,7 +743,19 @@
       },
       "hash": "3757c1fc680cd58647d264660809789e",
       "topic": "Creating Isolated Unit Tests for Angular Components with Dependency Injection"
+    },
+    {
+      "content": "When I was working on an Angular app recently, I learned a tough lesson about lazy loading. I thought I had everything right until I saw my initial load times were still too high. It turned out I was ",
+      "timestamp": "2026-09-18T19:19:13.975642",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 15
+      },
+      "hash": "b339a9ea4c487daa20d00fff4e180d31",
+      "topic": "Optimizing Component Loading Performance with Lazy Loading Techniques"
     }
   ],
-  "last_updated": "2026-09-18T09:20:23.390056"
+  "last_updated": "2026-09-18T19:19:13.980754"
 }
