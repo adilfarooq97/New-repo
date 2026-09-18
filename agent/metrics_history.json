@@ -734,16 +734,16 @@
     },
     {
       "content": "I learned something important about isolated unit tests in Angular while working on a component that had several services injected. Initially, I used the TestBed to provide the services directly, thin",
-      "timestamp": "2026-09-17T19:57:52.925165",
+      "timestamp": "2026-09-18T09:20:23.386065",
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "impressions": 25
+        "impressions": 27
       },
       "hash": "3757c1fc680cd58647d264660809789e",
       "topic": "Creating Isolated Unit Tests for Angular Components with Dependency Injection"
     }
   ],
-  "last_updated": "2026-09-17T19:57:52.930336"
+  "last_updated": "2026-09-18T09:20:23.390056"
 }
