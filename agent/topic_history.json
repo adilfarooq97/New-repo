@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Leveraging AI for Automated Code Refactoring in Software Development",
-    "timestamp": "2026-08-07T06:05:46.273025"
-  },
-  {
     "topic": "Learning When to Trust via Selective Context Preference Optimization",
     "timestamp": "2026-08-08T05:36:27.118698"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Optimizing Component Loading Performance with Lazy Loading Techniques",
     "timestamp": "2026-09-18T09:20:25.404660"
+  },
+  {
+    "topic": "Strategies for Managing Component State in Reactive User Interfaces",
+    "timestamp": "2026-09-19T09:08:12.175656"
   }
 ]
