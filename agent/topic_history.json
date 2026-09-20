@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Learning When to Trust via Selective Context Preference Optimization",
-    "timestamp": "2026-08-08T05:36:27.118698"
-  },
-  {
     "topic": "Building Custom AI Model Deployment Pipelines with Kubernetes",
     "timestamp": "2026-08-09T05:41:55.273804"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Strategies for Managing Component State in Reactive User Interfaces",
     "timestamp": "2026-09-19T09:08:12.175656"
+  },
+  {
+    "topic": "Using Semantic HTML for Accessible Data Tables in Web Applications",
+    "timestamp": "2026-09-20T09:33:49.884617"
   }
 ]

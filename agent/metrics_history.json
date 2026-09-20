@@ -758,16 +758,16 @@
     },
     {
       "content": "I encountered a tricky situation while managing component state in a React application recently. We had a form component with multiple input fields, and I decided to use the local state to track chang",
-      "timestamp": "2026-09-19T19:05:36.047167",
+      "timestamp": "2026-09-20T09:33:48.439581",
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "impressions": 7
+        "impressions": 10
       },
       "hash": "478fd25ea773e7edfdd884abe457bb2e",
       "topic": "Strategies for Managing Component State in Reactive User Interfaces"
     }
   ],
-  "last_updated": "2026-09-19T19:05:36.052097"
+  "last_updated": "2026-09-20T09:33:48.443178"
 }
