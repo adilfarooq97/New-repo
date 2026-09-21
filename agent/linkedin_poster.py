@@ -563,14 +563,25 @@ class LinkedInPoster:
             self._open_post_composer()
             self._enter_post_content(text)
             self._publish_post()
-            # Verify text snippet appears in feed (best-effort)
-            try:
-                lines = [l.strip() for l in text.splitlines() if l.strip()]
-                base_line = next((l for l in lines if not l.startswith('#')), lines[0] if lines else text)
-                snippet = (base_line or text)[:80]
-                self.page.wait_for_selector(f"text={snippet}", timeout=25000)
-            except Exception:
-                logger.warning("Could not verify post snippet in feed within timeout.")
+            # A successful button click is not enough: LinkedIn can reject a
+            # post after the composer closes. Require a visible confirmation.
+            lines = [line.strip() for line in text.splitlines() if line.strip()]
+            base_line = next((line for line in lines if not line.startswith('#')), lines[0] if lines else text)
+            snippet = (base_line or text)[:80]
+            confirmation_selectors = [
+                'text=/Your post was shared/i',
+                'text=/Post shared successfully/i',
+                f'text={snippet}',
+            ]
+            for selector in confirmation_selectors:
+                try:
+                    self.page.wait_for_selector(selector, timeout=10000)
+                    break
+                except PlaywrightTimeoutError:
+                    continue
+            else:
+                _save_debug_info(self.page, "verification_timeout")
+                raise LinkedInPostError("LinkedIn did not confirm that the post was published.")
             return True
         except (LinkedInAuthError, LinkedInPostError, LinkedInError, PlaywrightTimeoutError) as e:
             logger.error(f"Failed to post to LinkedIn: {e}", exc_info=True)

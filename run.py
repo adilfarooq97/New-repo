@@ -575,7 +575,7 @@ class LinkedInAgent:
         return current_post
 
     @timed_operation("linkedin_posting")
-    @handled_operation("LinkedIn posting", send_report=True, retry=True)
+    @handled_operation("LinkedIn posting", send_report=True, retry=True, critical=True)
     def _publish_to_linkedin(self, post_content: str, post_data: dict) -> None:
         """Publishes the post to LinkedIn or simulates in dry-run mode."""
         if self.enable_post:
