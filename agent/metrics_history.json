@@ -770,16 +770,16 @@
     },
     {
       "content": "I recently worked on a web application that required a data table to display user information. I had always heard about the importance of semantic HTML for accessibility but hadn\u2019t fully grasped its i",
-      "timestamp": "2026-09-20T19:12:10.557010",
+      "timestamp": "2026-09-21T14:07:34.572411",
       "engagement": {
         "likes": 1,
         "comments": 0,
         "shares": 0,
-        "impressions": 23
+        "impressions": 49
       },
       "hash": "e2df25438779f1d12d44e21d23a84b90",
       "topic": "Using Semantic HTML for Accessible Data Tables in Web Applications"
     }
   ],
-  "last_updated": "2026-09-20T19:12:10.559975"
+  "last_updated": "2026-09-21T14:07:34.851932"
 }
