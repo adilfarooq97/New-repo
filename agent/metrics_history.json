@@ -791,7 +791,19 @@
       },
       "hash": "324de6f6192dd429db2ccde6581b370c",
       "topic": "Optimizing Prop Drilling with Custom Hooks in React Components"
+    },
+    {
+      "content": "I was working on a large Angular application recently, and I ran into some performance issues when optimizing the critical rendering path. I noticed that my initial approach to code splitting wasn't a",
+      "timestamp": "2026-09-22T19:58:52.435716",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 23
+      },
+      "hash": "b55d0604dfeccc60ea458bd8a9afb621",
+      "topic": "Optimizing Critical Rendering Path with Code Splitting Strategies"
     }
   ],
-  "last_updated": "2026-09-22T09:35:49.217362"
+  "last_updated": "2026-09-22T19:58:52.438744"
 }
