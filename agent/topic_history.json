@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Beyond Naturalness: Probing Automated Text-To-Speech Evaluators on Linguistically Grounded Dimensions",
-    "timestamp": "2026-08-11T05:48:47.048307"
-  },
-  {
     "topic": "Debugging AI Model Outputs: Techniques for Effective Error Analysis",
     "timestamp": "2026-08-12T06:08:49.023053"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Optimizing Prop Drilling with Custom Hooks in React Components",
     "timestamp": "2026-09-21T14:16:08.963239"
+  },
+  {
+    "topic": "Optimizing Critical Rendering Path with Code Splitting Strategies",
+    "timestamp": "2026-09-22T09:35:50.578766"
   }
 ]

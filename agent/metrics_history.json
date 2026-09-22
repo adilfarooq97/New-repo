@@ -782,16 +782,16 @@
     },
     {
       "content": "I was building a React component that needed data from multiple nested components. At first, I didn't realize how much I was prop drilling down to gather that information. It wasn't until I noticed my",
-      "timestamp": "2026-09-21T20:43:21.506611",
+      "timestamp": "2026-09-22T09:35:49.213874",
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "impressions": 30
+        "impressions": 34
       },
       "hash": "324de6f6192dd429db2ccde6581b370c",
       "topic": "Optimizing Prop Drilling with Custom Hooks in React Components"
     }
   ],
-  "last_updated": "2026-09-21T20:43:21.511133"
+  "last_updated": "2026-09-22T09:35:49.217362"
 }
