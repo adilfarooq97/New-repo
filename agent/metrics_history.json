@@ -806,16 +806,16 @@
     },
     {
       "content": "I was debugging a TypeScript project recently when I stumbled upon a frustrating type mismatch error. It seemed simple at first\u2014a function was expecting a string, but I passed it a number instead. The",
-      "timestamp": "2026-09-23T19:55:42.239282",
+      "timestamp": "2026-09-24T09:40:24.491320",
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "impressions": 76
+        "impressions": 83
       },
       "hash": "198e7e5cb6c65fba35d8ad356a5bf70c",
       "topic": "Debugging TypeScript: Advanced Techniques for Identifying Type Mismatches"
     }
   ],
-  "last_updated": "2026-09-23T19:55:42.243341"
+  "last_updated": "2026-09-24T09:40:24.494318"
 }
