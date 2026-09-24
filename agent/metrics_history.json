@@ -815,7 +815,19 @@
       },
       "hash": "198e7e5cb6c65fba35d8ad356a5bf70c",
       "topic": "Debugging TypeScript: Advanced Techniques for Identifying Type Mismatches"
+    },
+    {
+      "content": "When I was working on a recent project, I focused on adding micro-interactions to improve user engagement. One detail that caught me off guard was the timing of animations.\n\nInitially, I set the anima",
+      "timestamp": "2026-09-24T20:14:02.029424",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 166
+      },
+      "hash": "ad6ab101cd308d271d56c306e4f69379",
+      "topic": "Creating Micro-Interactions to Enhance User Engagement in Web Apps"
     }
   ],
-  "last_updated": "2026-09-24T09:40:24.494318"
+  "last_updated": "2026-09-24T20:14:02.032134"
 }
