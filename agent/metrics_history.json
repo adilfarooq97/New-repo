@@ -827,7 +827,19 @@
       },
       "hash": "ad6ab101cd308d271d56c306e4f69379",
       "topic": "Creating Micro-Interactions to Enhance User Engagement in Web Apps"
+    },
+    {
+      "content": "I recently worked on an Angular application where I had to implement feature modules for better scalability. It seemed straightforward at first, but I quickly ran into a common pitfall.\n\nI was focusin",
+      "timestamp": "2026-09-25T20:12:01.008347",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 122
+      },
+      "hash": "f10e728774bc225d0c73927078ef5dc3",
+      "topic": "Implementing Feature Modules for Scalable Angular Application Architecture"
     }
   ],
-  "last_updated": "2026-09-25T09:58:16.448371"
+  "last_updated": "2026-09-25T20:12:01.012994"
 }
