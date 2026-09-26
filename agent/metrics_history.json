@@ -839,7 +839,19 @@
       },
       "hash": "f10e728774bc225d0c73927078ef5dc3",
       "topic": "Implementing Feature Modules for Scalable Angular Application Architecture"
+    },
+    {
+      "content": "I was working on an Angular project where we needed to display a long list of items efficiently. Initially, I didn\u2019t use the trackBy function with ngFor, and as the data length grew, performance reall",
+      "timestamp": "2026-09-26T19:30:43.889456",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 131
+      },
+      "hash": "2bb1046bcd93b62b4981c8d863b58e25",
+      "topic": "Using TrackBy to Optimize ngFor Performance in Angular Applications"
     }
   ],
-  "last_updated": "2026-09-26T09:40:14.547037"
+  "last_updated": "2026-09-26T19:30:43.894138"
 }
