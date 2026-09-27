@@ -851,7 +851,19 @@
       },
       "hash": "2bb1046bcd93b62b4981c8d863b58e25",
       "topic": "Using TrackBy to Optimize ngFor Performance in Angular Applications"
+    },
+    {
+      "content": "I was working on an Angular app recently where we needed to efficiently handle user input in forms. We decided to use RxJS for managing the form state and validating the inputs. It sounded great, but ",
+      "timestamp": "2026-09-27T19:56:05.048788",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "impressions": 4
+      },
+      "hash": "d4b806c70981de71bd78c82cbf954958",
+      "topic": "Implementing RxJS for Efficient Form Handling in Angular Applications"
     }
   ],
-  "last_updated": "2026-09-27T18:53:39.080322"
+  "last_updated": "2026-09-27T19:56:05.061994"
 }
