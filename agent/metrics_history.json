@@ -863,7 +863,19 @@
       },
       "hash": "d4b806c70981de71bd78c82cbf954958",
       "topic": "Implementing RxJS for Efficient Form Handling in Angular Applications"
+    },
+    {
+      "content": "I recently faced a challenge with event handling in React while working on a form that needed to handle inputs from different types of fields. At first, I used a basic event handler, which led to a lo",
+      "timestamp": "2026-09-28T22:22:03.853672",
+      "engagement": {
+        "likes": 0,
+        "comments": 2,
+        "shares": 0,
+        "impressions": 192
+      },
+      "hash": "cdb3a4304d0ec47e000b42df72ce2d98",
+      "topic": "Type-safe Event Handling in React with TypeScript Generics"
     }
   ],
-  "last_updated": "2026-09-28T18:03:57.480979"
+  "last_updated": "2026-09-28T22:22:03.856039"
 }
