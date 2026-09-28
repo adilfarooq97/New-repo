@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Decoding the Past: An Uncertainty-Aware Deep Learning Framework for Sex Attribution in Prehistoric Hand Stencils",
-    "timestamp": "2026-08-17T05:27:57.385437"
-  },
-  {
     "topic": "Implementing Model Drift Detection in AI Systems for Continuous Improvement",
     "timestamp": "2026-08-18T05:21:15.283198"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Implementing RxJS for Efficient Form Handling in Angular Applications",
     "timestamp": "2026-09-27T18:53:40.421476"
+  },
+  {
+    "topic": "Type-safe Event Handling in React with TypeScript Generics",
+    "timestamp": "2026-09-28T18:03:59.568190"
   }
 ]
