@@ -866,16 +866,16 @@
     },
     {
       "content": "I recently faced a challenge with event handling in React while working on a form that needed to handle inputs from different types of fields. At first, I used a basic event handler, which led to a lo",
-      "timestamp": "2026-09-28T22:22:03.853672",
+      "timestamp": "2026-09-29T18:28:52.172815",
       "engagement": {
         "likes": 0,
         "comments": 2,
         "shares": 0,
-        "impressions": 192
+        "impressions": 233
       },
       "hash": "cdb3a4304d0ec47e000b42df72ce2d98",
       "topic": "Type-safe Event Handling in React with TypeScript Generics"
     }
   ],
-  "last_updated": "2026-09-28T22:22:03.856039"
+  "last_updated": "2026-09-29T18:28:52.175744"
 }
