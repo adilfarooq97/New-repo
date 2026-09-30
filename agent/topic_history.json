@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Real-time Feedback Loops in AI Model Training for User-Centric Design",
-    "timestamp": "2026-08-19T05:23:26.985659"
-  },
-  {
     "topic": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
     "timestamp": "2026-08-20T05:22:43.905711"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Testing Angular Services with Mocks for Improved Maintainability",
     "timestamp": "2026-09-29T18:28:53.657548"
+  },
+  {
+    "topic": "Implementing Custom ESLint Rules for Frontend Code Consistency",
+    "timestamp": "2026-09-30T17:28:50.861840"
   }
 ]

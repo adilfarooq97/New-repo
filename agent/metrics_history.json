@@ -878,16 +878,16 @@
     },
     {
       "content": "While working on an Angular application, I hit a snag with testing services. I had mocked a service for unit tests but overlooked how it interacted with an external API.\n\nI created a simple HttpClient",
-      "timestamp": "2026-09-29T21:11:06.773813",
+      "timestamp": "2026-09-30T17:28:49.429332",
       "engagement": {
-        "likes": 0,
-        "comments": 0,
+        "likes": 1,
+        "comments": 2,
         "shares": 0,
-        "impressions": 9
+        "impressions": 65
       },
       "hash": "f3e505e8f53d4521366cd33614c207d1",
       "topic": "Testing Angular Services with Mocks for Improved Maintainability"
     }
   ],
-  "last_updated": "2026-09-29T21:11:06.776506"
+  "last_updated": "2026-09-30T17:28:49.432144"
 }
