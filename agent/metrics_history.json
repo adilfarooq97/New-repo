@@ -890,16 +890,16 @@
     },
     {
       "content": "I ran into a puzzling issue while setting up custom ESLint rules in a React project. We wanted to enforce a consistent coding style across the codebase, especially around how we handle props in our co",
-      "timestamp": "2026-09-30T21:07:01.431621",
+      "timestamp": "2026-10-01T18:44:24.934835",
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "impressions": 31
+        "impressions": 47
       },
       "hash": "eb5eb9be98f267bad014207e2c314fdc",
       "topic": "Implementing Custom ESLint Rules for Frontend Code Consistency"
     }
   ],
-  "last_updated": "2026-09-30T21:07:01.435238"
+  "last_updated": "2026-10-01T18:44:24.937390"
 }
