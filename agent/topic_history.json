@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Evaluating the Impact of Data Quality on AI Model Performance",
-    "timestamp": "2026-08-21T05:24:26.524587"
-  },
-  {
     "topic": "Adaptive Learning Strategies for Autonomous AI Agent Performance Optimization",
     "timestamp": "2026-08-22T05:19:05.015335"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Building Resilient User Interfaces with Progressive Enhancement Techniques",
     "timestamp": "2026-10-01T18:44:26.825997"
+  },
+  {
+    "topic": "Using ARIA Landmarks to Improve Navigation in Semantic HTML",
+    "timestamp": "2026-10-02T08:55:11.768693"
   }
 ]
