@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Adaptive Learning Strategies for Autonomous AI Agent Performance Optimization",
-    "timestamp": "2026-08-22T05:19:05.015335"
-  },
-  {
     "topic": "Information on trajectories: martingales and random times",
     "timestamp": "2026-08-23T05:21:26.133711"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Using ARIA Landmarks to Improve Navigation in Semantic HTML",
     "timestamp": "2026-10-02T08:55:11.768693"
+  },
+  {
+    "topic": "Designing a Tailwind CSS Theme Switcher for User Preferences",
+    "timestamp": "2026-10-04T18:26:46.217733"
   }
 ]
