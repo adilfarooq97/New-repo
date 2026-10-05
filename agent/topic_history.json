@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Information on trajectories: martingales and random times",
-    "timestamp": "2026-08-23T05:21:26.133711"
-  },
-  {
     "topic": "Implementing Model-Centric AI Design for Enhanced Usability and Performance",
     "timestamp": "2026-08-24T05:31:01.711206"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Designing a Tailwind CSS Theme Switcher for User Preferences",
     "timestamp": "2026-10-04T18:26:46.217733"
+  },
+  {
+    "topic": "Implementing Compound Components Pattern for Better React Composition",
+    "timestamp": "2026-10-05T18:38:30.754409"
   }
 ]
