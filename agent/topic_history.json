@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Implementing Model-Centric AI Design for Enhanced Usability and Performance",
-    "timestamp": "2026-08-24T05:31:01.711206"
-  },
-  {
     "topic": "Leveraging AI for Intelligent Error Correction in Software Development",
     "timestamp": "2026-08-25T05:23:55.567780"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Implementing Compound Components Pattern for Better React Composition",
     "timestamp": "2026-10-05T18:38:30.754409"
+  },
+  {
+    "topic": "Leveraging Intersection Observer API for Efficient Image Lazy Loading",
+    "timestamp": "2026-10-06T12:49:34.046392"
   }
 ]
