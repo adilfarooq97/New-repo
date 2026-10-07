@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Leveraging AI for Intelligent Error Correction in Software Development",
-    "timestamp": "2026-08-25T05:23:55.567780"
-  },
-  {
     "topic": "What FID Hides: Detecting, Ranking, and Diagnosing Deviations in Generative Evaluation",
     "timestamp": "2026-08-26T05:25:16.578331"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Leveraging Intersection Observer API for Efficient Image Lazy Loading",
     "timestamp": "2026-10-06T12:49:34.046392"
+  },
+  {
+    "topic": "Implementing TypeScript Enum for Enhanced State Management in Frontend Apps",
+    "timestamp": "2026-10-07T13:33:13.571361"
   }
 ]
