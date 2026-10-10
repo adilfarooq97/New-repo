@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Implementing AI-driven Personalization Strategies in E-commerce Platforms",
-    "timestamp": "2026-09-02T09:12:26.578830"
-  },
-  {
     "topic": "A Common Measure of Communication for Speech Brain-Computer Interfaces",
     "timestamp": "2026-09-03T09:18:53.082631"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Optimizing Angular Router Performance with Route Preloading Strategies",
     "timestamp": "2026-10-09T17:11:08.576279"
+  },
+  {
+    "topic": "Using OnPush Change Detection with Immutable Data Structures in Angular",
+    "timestamp": "2026-10-10T16:51:53.971659"
   }
 ]
