@@ -1,9 +1,5 @@
 [
   {
-    "topic": "AI-Driven Techniques for Automatic Code Generation in Low-Code Platforms",
-    "timestamp": "2026-09-04T09:12:35.532460"
-  },
-  {
     "topic": "Integrating AI-Powered Version Control in Collaborative Software Development Environments",
     "timestamp": "2026-09-05T08:43:21.709242"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Creating a Reactive Form Builder Using RxJS and Angular Reactive Forms",
     "timestamp": "2026-10-11T17:59:59.700752"
+  },
+  {
+    "topic": "Utilizing TypeScript Advanced Types for Improved API Response Handling",
+    "timestamp": "2026-10-13T15:28:58.794015"
   }
 ]
