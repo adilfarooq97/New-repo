@@ -69,7 +69,7 @@ def _write_state_mirror(state: dict) -> None:
         print(f"Warning: could not write {STATE_FILE}: {e}")
 
 
-def should_post_now(force: bool = False) -> bool:
+def should_post_now(force: bool = False, scheduled: bool = False) -> bool:
     """True when inside today's posting window and nothing was posted today yet."""
     if force:
         return True
@@ -82,6 +82,9 @@ def should_post_now(force: bool = False) -> bool:
         last_posted = storage.get_state(LAST_POSTED_KEY)
         if last_posted == today.isoformat():
             return False  # already posted today
+
+        if scheduled:
+            return True
 
         slot = parse_time_with_timezone(get_slot_for_day(today, posting_cfg), timezone, today)
         window_minutes = int(posting_cfg.get("time_window_end", 120))

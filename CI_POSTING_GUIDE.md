@@ -64,7 +64,8 @@ The GitHub Actions workflow is configured to:
 
 - **Default**: `ENABLE_POST=true` for the scheduled workflow
 - **Override**: Set `ENABLE_POST=false` in workflow environment settings for content generation only
-- **Fallback**: If posting fails, the workflow continues (doesn't fail the build)
+- **Delayed schedules**: A scheduled run posts even if GitHub starts it after the configured posting window, unless a post was already recorded for that day
+- **Failures**: A LinkedIn posting failure fails the workflow and uploads available debug artifacts
 
 ## Troubleshooting
 

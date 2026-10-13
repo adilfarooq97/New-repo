@@ -17,12 +17,12 @@ The content profile is configured for a frontend developer working with HTML, Ta
 - **Growth engine (opt-in)**: First-comment on your own post, LLM-generated niche comments, and connection requests — all rate-limited with human-like pacing.
 - **LinkedIn automation**: Playwright only (Selenium removed).
 - **Metrics, email reports, self-healing, health checks**.
-- **CLI controls**: `--dry-run`, `--force`, `--process-retries`, `--check-health`, `--collect-metrics`, `--growth`
+- **CLI controls**: `--dry-run`, `--force`, `--scheduled-run`, `--process-retries`, `--check-health`, `--collect-metrics`, `--growth`
 
 ## How it works
 
 1. **Schedule gate**
-   - Runs if inside posting window (`scheduler.should_post_now()`), or immediately with `--force`.
+   - Runs inside the configured posting window; a delayed GitHub scheduled run can post outside that window if no post has been made today. `--force` remains available for manual runs.
 2. **Context fetch**
    - GitHub activity (if `GITHUB_USERNAME`/token present) and LinkedIn engagement (if creds present).
 3. **Content strategy selection**

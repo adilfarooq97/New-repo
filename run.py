@@ -135,9 +135,11 @@ class LinkedInAgent:
     Manages the end-to-end workflow for generating and posting content to LinkedIn,
     including scheduling, content generation, deduplication, posting, and reporting.
     """
-    def __init__(self, dry_run: bool = False, force_post: bool = False):
+    def __init__(self, dry_run: bool = False, force_post: bool = False,
+                 scheduled_run: bool = False):
         self.dry_run = dry_run
         self.force_post = force_post
+        self.scheduled_run = scheduled_run
         self.run_id = datetime.now().strftime("%Y%m%d%H%M%S")
         self.logger = get_logger("linkedin_agent", {"run_id": self.run_id})
         self.metrics = get_metrics_tracker("linkedin_agent_metrics.json")
@@ -155,7 +157,7 @@ class LinkedInAgent:
     @timed_operation("schedule_check")
     def _check_posting_schedule(self) -> bool:
         """Determines if a post should be made based on schedule or force flag."""
-        should_post = self.force_post or should_post_now()
+        should_post = self.force_post or should_post_now(scheduled=self.scheduled_run)
         event_data = {"result": "inside" if should_post else "outside"}
         self.logger.info(f"Posting window check: {event_data['result']}", 
                          extra={"event": "posting_window_check", **event_data})
@@ -734,6 +736,8 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="LinkedIn Agent")
     parser.add_argument("--dry-run", action="store_true", help="Run in dry-run mode (no actual posting)")
     parser.add_argument("--force", action="store_true", help="Force posting regardless of schedule")
+    parser.add_argument("--scheduled-run", action="store_true",
+                        help="Allow a delayed scheduled run to post outside the window, unless already posted today")
     parser.add_argument("--process-retries", action="store_true", help="Process retry queue")
     parser.add_argument("--check-health", action="store_true", help="Check system health")
     parser.add_argument("--collect-metrics", action="store_true",
@@ -805,7 +809,8 @@ def main_cli():
             return
 
         # Regular workflow execution
-        agent = LinkedInAgent(dry_run=args.dry_run, force_post=args.force)
+        agent = LinkedInAgent(dry_run=args.dry_run, force_post=args.force,
+                              scheduled_run=args.scheduled_run)
         if not agent.run() and not agent.skipped:
             sys.exit(1)
 
