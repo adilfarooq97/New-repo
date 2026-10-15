@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
-    "timestamp": "2026-09-06T09:04:14.005099"
-  },
-  {
     "topic": "Dynamic Benchmarking for AI Model Performance in Edge Computing Environments",
     "timestamp": "2026-09-07T09:51:23.995784"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Strategies for Writing Maintainable Unit Tests in Angular Applications",
     "timestamp": "2026-10-14T09:53:24.233159"
+  },
+  {
+    "topic": "Reducing Frontend Build Times with Incremental Builds in Webpack",
+    "timestamp": "2026-10-15T09:33:45.716517"
   }
 ]
