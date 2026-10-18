@@ -1,9 +1,5 @@
 [
   {
-    "topic": "TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model",
-    "timestamp": "2026-09-09T09:19:13.006928"
-  },
-  {
     "topic": "Implementing AI Techniques for Automated Technical Debt Identification in Codebases",
     "timestamp": "2026-09-10T09:17:51.655829"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Utilizing Landmark Roles for Improved Screen Reader Navigation in HTML",
     "timestamp": "2026-10-17T08:58:01.394760"
+  },
+  {
+    "topic": "Designing a Tailwind CSS Scale Utility for Responsive Typography",
+    "timestamp": "2026-10-18T09:17:00.719165"
   }
 ]
