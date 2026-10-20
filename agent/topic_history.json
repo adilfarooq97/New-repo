@@ -1,9 +1,5 @@
 [
   {
-    "topic": "AI-Optimized Workflow Automation for Continuous Integration Processes",
-    "timestamp": "2026-09-11T09:16:52.042221"
-  },
-  {
     "topic": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
     "timestamp": "2026-09-11T16:14:37.180341"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Implementing Atomic Design Principles in React Component Development",
     "timestamp": "2026-10-19T10:27:12.940148"
+  },
+  {
+    "topic": "Optimizing Image Formats for Performance in Frontend Development",
+    "timestamp": "2026-10-20T09:45:45.005086"
   }
 ]
