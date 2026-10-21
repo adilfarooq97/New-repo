@@ -1,9 +1,5 @@
 [
   {
-    "topic": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
-    "timestamp": "2026-09-11T16:14:37.180341"
-  },
-  {
     "topic": "AI Engineering \u2014 2026-09-11",
     "timestamp": "2026-09-11T16:14:46.356926"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Optimizing Image Formats for Performance in Frontend Development",
     "timestamp": "2026-10-20T09:45:45.005086"
+  },
+  {
+    "topic": "Creating Custom TypeScript Utility Types for Form Validation in React",
+    "timestamp": "2026-10-21T09:47:18.549730"
   }
 ]
