@@ -1,9 +1,5 @@
 [
   {
-    "topic": "AI Engineering \u2014 2026-09-11",
-    "timestamp": "2026-09-11T16:14:46.356926"
-  },
-  {
     "topic": "AI Development \u2014 2026-09-11",
     "timestamp": "2026-09-11T16:15:49.592240"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Creating Custom TypeScript Utility Types for Form Validation in React",
     "timestamp": "2026-10-21T09:47:18.549730"
+  },
+  {
+    "topic": "Utilizing User Journey Mapping for Improved UI Design Decisions",
+    "timestamp": "2026-10-22T09:47:17.140859"
   }
 ]
