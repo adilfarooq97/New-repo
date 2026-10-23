@@ -1,9 +1,5 @@
 [
   {
-    "topic": "AI Development \u2014 2026-09-11",
-    "timestamp": "2026-09-11T16:15:49.592240"
-  },
-  {
     "topic": "General Quantification of Covariate and Concept Shifts",
     "timestamp": "2026-09-11T16:16:08.826161"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Utilizing User Journey Mapping for Improved UI Design Decisions",
     "timestamp": "2026-10-22T09:47:17.140859"
+  },
+  {
+    "topic": "Creating a Modular Navigation System with Angular Router and Feature Modules",
+    "timestamp": "2026-10-23T09:43:00.720107"
   }
 ]
