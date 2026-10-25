@@ -1,9 +1,5 @@
 [
   {
-    "topic": "AI Engineering \u2014 2026-09-11",
-    "timestamp": "2026-09-11T16:17:16.291317"
-  },
-  {
     "topic": "Tiny Grad-CAM for Binary Classifier Debugging",
     "timestamp": "2026-09-11T16:18:51.190310"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Leveraging Angular Service Workers for Enhanced Application Performance",
     "timestamp": "2026-10-24T09:15:16.910119"
+  },
+  {
+    "topic": "Implementing RxJS Subjects for Real-Time Data Updates in Angular Apps",
+    "timestamp": "2026-10-25T09:32:23.327972"
   }
 ]
