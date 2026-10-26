@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Tiny Grad-CAM for Binary Classifier Debugging",
-    "timestamp": "2026-09-11T16:18:51.190310"
-  },
-  {
     "topic": "Data Scarcity and Model Sparsity: Mixtures-of-Experts Overfit More to Repeated Data",
     "timestamp": "2026-09-11T16:20:02.129054"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Implementing RxJS Subjects for Real-Time Data Updates in Angular Apps",
     "timestamp": "2026-10-25T09:32:23.327972"
+  },
+  {
+    "topic": "Implementing TypeScript Mixins for Enhanced Component Composition in React",
+    "timestamp": "2026-10-26T10:42:08.905592"
   }
 ]
