@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Data Scarcity and Model Sparsity: Mixtures-of-Experts Overfit More to Repeated Data",
-    "timestamp": "2026-09-11T16:20:02.129054"
-  },
-  {
     "topic": "Compiling LLM Tool Calls into Static Dataflow Graphs",
     "timestamp": "2026-09-11T16:20:48.684998"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Implementing TypeScript Mixins for Enhanced Component Composition in React",
     "timestamp": "2026-10-26T10:42:08.905592"
+  },
+  {
+    "topic": "Testing Angular Component Styles with Automated Visual Regression Tools",
+    "timestamp": "2026-10-27T10:10:08.718153"
   }
 ]
