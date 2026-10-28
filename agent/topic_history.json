@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Compiling LLM Tool Calls into Static Dataflow Graphs",
-    "timestamp": "2026-09-11T16:20:48.684998"
-  },
-  {
     "topic": "Cancelling LLM Tool Calls with RxJS Race",
     "timestamp": "2026-09-11T16:28:16.660364"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Testing Angular Component Styles with Automated Visual Regression Tools",
     "timestamp": "2026-10-27T10:10:08.718153"
+  },
+  {
+    "topic": "Utilizing Visual Studio Code Extensions to Boost Frontend Development Efficiency",
+    "timestamp": "2026-10-28T10:56:25.914832"
   }
 ]
