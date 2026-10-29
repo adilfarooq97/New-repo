@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Cancelling LLM Tool Calls with RxJS Race",
-    "timestamp": "2026-09-11T16:28:16.660364"
-  },
-  {
     "topic": "TypeScript for Scalable Frontend Systems \u2014 2026-09-11",
     "timestamp": "2026-09-11T11:58:46.634422"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Utilizing Visual Studio Code Extensions to Boost Frontend Development Efficiency",
     "timestamp": "2026-10-28T10:56:25.914832"
+  },
+  {
+    "topic": "Implementing Error Boundaries for Robust React User Interfaces",
+    "timestamp": "2026-10-29T11:13:49.640305"
   }
 ]
