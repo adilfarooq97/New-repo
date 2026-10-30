@@ -1,9 +1,5 @@
 [
   {
-    "topic": "TypeScript for Scalable Frontend Systems \u2014 2026-09-11",
-    "timestamp": "2026-09-11T11:58:46.634422"
-  },
-  {
     "topic": "Utilizing AI to Automate Angular Component Integration Testing",
     "timestamp": "2026-09-11T12:06:17.167535"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Implementing Error Boundaries for Robust React User Interfaces",
     "timestamp": "2026-10-29T11:13:49.640305"
+  },
+  {
+    "topic": "Using `<main>` and `<footer>` for Improved Page Structure and Accessibility",
+    "timestamp": "2026-10-30T11:08:41.466233"
   }
 ]
