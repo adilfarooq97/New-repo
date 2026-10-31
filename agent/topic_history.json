@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Utilizing AI to Automate Angular Component Integration Testing",
-    "timestamp": "2026-09-11T12:06:17.167535"
-  },
-  {
     "topic": "AI-Powered Code Review Tools for Instant Feedback on Frontend Development",
     "timestamp": "2026-09-11T12:18:57.083146"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Using `<main>` and `<footer>` for Improved Page Structure and Accessibility",
     "timestamp": "2026-10-30T11:08:41.466233"
+  },
+  {
+    "topic": "Creating Responsive Tailwind CSS Cards with Dynamic Content Adjustment",
+    "timestamp": "2026-10-31T10:42:01.636995"
   }
 ]
