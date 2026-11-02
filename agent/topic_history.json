@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Designing AI-Powered Accessibility Features for User Interfaces",
-    "timestamp": "2026-09-12T08:58:45.734668"
-  },
-  {
     "topic": "Implementing AI for State Management Optimization in Angular Applications",
     "timestamp": "2026-09-13T09:55:59.168847"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Designing a Context API for Global State Management in React Components",
     "timestamp": "2026-11-01T11:37:10.435833"
+  },
+  {
+    "topic": "Optimizing CSS-in-JS for Performance in React Applications",
+    "timestamp": "2026-11-02T13:00:17.574829"
   }
 ]
