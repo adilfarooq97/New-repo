@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Implementing AI for State Management Optimization in Angular Applications",
-    "timestamp": "2026-09-13T09:55:59.168847"
-  },
-  {
     "topic": "Utilizing Change Detection Strategies for Angular Performance Improvements",
     "timestamp": "2026-09-14T17:49:13.806313"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Optimizing CSS-in-JS for Performance in React Applications",
     "timestamp": "2026-11-02T13:00:17.574829"
+  },
+  {
+    "topic": "TypeScript Decorators for Enhanced Component Metadata in Angular Applications",
+    "timestamp": "2026-11-03T12:33:59.408699"
   }
 ]
