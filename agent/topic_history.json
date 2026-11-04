@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Utilizing Change Detection Strategies for Angular Performance Improvements",
-    "timestamp": "2026-09-14T17:49:13.806313"
-  },
-  {
     "topic": "Using RxJS for Optimizing Debouncing in Search Inputs",
     "timestamp": "2026-09-15T09:44:35.405619"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "TypeScript Decorators for Enhanced Component Metadata in Angular Applications",
     "timestamp": "2026-11-03T12:33:59.408699"
+  },
+  {
+    "topic": "Designing Adaptive User Interfaces for Different Screen Sizes and Contexts",
+    "timestamp": "2026-11-04T12:43:54.874057"
   }
 ]
