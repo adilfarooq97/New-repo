@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Using RxJS for Optimizing Debouncing in Search Inputs",
-    "timestamp": "2026-09-15T09:44:35.405619"
-  },
-  {
     "topic": "TypeScript Generics for Creating Reusable Component Libraries in Frontend Development",
     "timestamp": "2026-09-16T09:38:46.249801"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Designing Adaptive User Interfaces for Different Screen Sizes and Contexts",
     "timestamp": "2026-11-04T12:43:54.874057"
+  },
+  {
+    "topic": "Creating a Modular State Management System with NgRx in Angular",
+    "timestamp": "2026-11-05T12:53:17.125074"
   }
 ]
