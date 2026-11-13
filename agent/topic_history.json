@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Optimizing Critical Rendering Path with Code Splitting Strategies",
-    "timestamp": "2026-09-22T09:35:50.578766"
-  },
-  {
     "topic": "Debugging TypeScript: Advanced Techniques for Identifying Type Mismatches",
     "timestamp": "2026-09-23T09:41:28.724760"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Creating Accessible Data Tables with Semantic HTML and ARIA Attributes",
     "timestamp": "2026-11-12T13:29:41.618413"
+  },
+  {
+    "topic": "Creating a Custom Tailwind CSS Utility for Dark Mode Transitions",
+    "timestamp": "2026-11-13T12:46:21.834075"
   }
 ]
