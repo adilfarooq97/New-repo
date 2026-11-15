@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Creating Micro-Interactions to Enhance User Engagement in Web Apps",
-    "timestamp": "2026-09-24T09:40:25.270122"
-  },
-  {
     "topic": "Implementing Feature Modules for Scalable Angular Application Architecture",
     "timestamp": "2026-09-25T09:58:17.417929"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Using Render Props for Dynamic React Component Behavior",
     "timestamp": "2026-11-14T11:54:05.556261"
+  },
+  {
+    "topic": "Leveraging Web Workers for Improved Frontend Performance in Heavy Calculations",
+    "timestamp": "2026-11-15T12:38:10.095471"
   }
 ]
