@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Implementing Feature Modules for Scalable Angular Application Architecture",
-    "timestamp": "2026-09-25T09:58:17.417929"
-  },
-  {
     "topic": "Using TrackBy to Optimize ngFor Performance in Angular Applications",
     "timestamp": "2026-09-26T09:40:15.861314"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Leveraging Web Workers for Improved Frontend Performance in Heavy Calculations",
     "timestamp": "2026-11-15T12:38:10.095471"
+  },
+  {
+    "topic": "Using TypeScript namespaces for organizing large frontend applications",
+    "timestamp": "2026-11-16T13:18:44.606562"
   }
 ]
