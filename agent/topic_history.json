@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Testing Angular Services with Mocks for Improved Maintainability",
-    "timestamp": "2026-09-29T18:28:53.657548"
-  },
-  {
     "topic": "Implementing Custom ESLint Rules for Frontend Code Consistency",
     "timestamp": "2026-09-30T17:28:50.861840"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Optimizing Angular Component Render Performance with TrackBy Function",
     "timestamp": "2026-11-19T14:03:47.147726"
+  },
+  {
+    "topic": "Managing Side Effects in Angular with RxJS Effects and Observables",
+    "timestamp": "2026-11-20T13:47:10.663298"
   }
 ]
