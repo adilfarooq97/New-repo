@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Implementing Custom ESLint Rules for Frontend Code Consistency",
-    "timestamp": "2026-09-30T17:28:50.861840"
-  },
-  {
     "topic": "Building Resilient User Interfaces with Progressive Enhancement Techniques",
     "timestamp": "2026-10-01T18:44:26.825997"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Managing Side Effects in Angular with RxJS Effects and Observables",
     "timestamp": "2026-11-20T13:47:10.663298"
+  },
+  {
+    "topic": "Utilizing TypeScript Enums for Managing Constant Values in Frontend Applications",
+    "timestamp": "2026-11-21T13:11:55.069373"
   }
 ]
