@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Implementing Compound Components Pattern for Better React Composition",
-    "timestamp": "2026-10-05T18:38:30.754409"
-  },
-  {
     "topic": "Leveraging Intersection Observer API for Efficient Image Lazy Loading",
     "timestamp": "2026-10-06T12:49:34.046392"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Creating a Button Component with Built-In Loading States in React",
     "timestamp": "2026-11-24T15:28:24.768111"
+  },
+  {
+    "topic": "Using Proper Heading Levels for Improved Semantic Structure and Accessibility",
+    "timestamp": "2026-11-25T15:13:59.084393"
   }
 ]
