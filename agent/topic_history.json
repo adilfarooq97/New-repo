@@ -1,9 +1,5 @@
 [
   {
-    "topic": "Leveraging Intersection Observer API for Efficient Image Lazy Loading",
-    "timestamp": "2026-10-06T12:49:34.046392"
-  },
-  {
     "topic": "Implementing TypeScript Enum for Enhanced State Management in Frontend Apps",
     "timestamp": "2026-10-07T13:33:13.571361"
   },
@@ -198,5 +194,9 @@
   {
     "topic": "Using Proper Heading Levels for Improved Semantic Structure and Accessibility",
     "timestamp": "2026-11-25T15:13:59.084393"
+  },
+  {
+    "topic": "Creating a Tailwind CSS Plugin for Custom Dropdown Components",
+    "timestamp": "2026-11-26T14:38:53.032694"
   }
 ]
